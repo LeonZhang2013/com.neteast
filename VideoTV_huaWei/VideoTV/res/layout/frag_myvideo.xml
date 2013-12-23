@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <com.neteast.videotv.ui.widget.ChannelList
+        android:id="@+id/LeftPanel"
+        android:layout_width="@dimen/nav_sublist_width"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/nav_sub_list_bg"/>
+
+    <include layout="@layout/layout_shadow"/>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:id="@+id/poster_filter_scroll"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="70dp"
+            android:scrollbars="none"
+            android:visibility="invisible">
+            <LinearLayout
+                android:id="@+id/poster_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+        </HorizontalScrollView>
+
+        <GridLayout
+            android:id="@+id/PosterGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            />
+
+        <com.neteast.videotv.ui.widget.PageSelector
+            android:id="@+id/pageSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="18dp"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

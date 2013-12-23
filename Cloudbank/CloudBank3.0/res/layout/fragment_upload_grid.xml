@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+		<!-- 顶部导航栏 -->
+    <LinearLayout
+        android:id="@+id/uploadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            
+            <ImageButton
+            android:id="@+id/uploadfile_return"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="30dp"
+			android:src="@drawable/returnbuttonstyle"
+			android:background="#00000000" />
+			<LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="700dp"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal" >
+	            <Button
+	                android:id="@+id/btnSelectAll"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/selectallbtn"/>
+	            <Button
+	                android:id="@+id/btnCancel"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	               	android:background="@drawable/cleanallbtn"
+	               	android:visibility="gone"/>
+	            <Button
+	                android:id="@+id/btnUpload"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                 android:layout_marginLeft="20dp"
+	                android:background="@drawable/uploadbtn"/>
+	        </LinearLayout>
+	    </LinearLayout>
+
+   		<android.support.v4.view.ViewPager
+			android:id="@+id/uploadFileViewPager"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" 
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="30dp"
+	        android:layout_marginRight="30dp"
+	        android:layout_weight="1"
+		    android:gravity="center"/>
+   		<TextView
+        	android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统仅支持不大于2GB文件上传"
+            android:textColor="#482126"
+            android:paddingLeft="20dp"
+           
+            android:layout_marginBottom="20dp"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/noSDCardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="30dp"
+            android:text="提示"
+             style="@style/noExternalStoragestyle"
+     
+            android:layout_gravity="center_horizontal"/>
+
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="30dp"
+            style="@style/noExternalStoragestyle"
+            android:text="没有外设存储，请检查。"     
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.neteast.clouddisk.customerview.DragLayer xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/myuploadmusic_page"
+	android:orientation="vertical" >
+	<RelativeLayout
+		android:id="@+id/musiccontent"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1" >
+		<Button android:layout_width="wrap_content"
+			android:layout_marginLeft="30dp"
+			android:layout_marginTop="30dp"
+		    android:layout_alignParentLeft="true"
+		    android:background="@drawable/recordbtn"
+			android:layout_height="wrap_content"  
+			android:id="@+id/bt_record">
+		</Button>
+		<Button android:layout_width="wrap_content"
+		    android:layout_marginLeft="30dp"
+		    android:layout_marginTop="30dp"
+		    android:layout_alignParentLeft="true"
+		    android:visibility="invisible"
+		    android:background="@drawable/returnbutton"
+			android:layout_height="wrap_content"  
+			android:id="@+id/returnbtn">
+		</Button>
+		
+		<LinearLayout
+	    	android:layout_width="65dp"
+	        android:layout_height="59dp"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/pageinfobg"
+	        android:layout_marginRight="25dp"
+	        android:orientation="vertical" >
+	        <TextView
+	        	android:id="@+id/curentpage"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="left"
+	            android:gravity="center"
+	            android:text=""
+	            style="@style/pageinfostyle" />
+	        <TextView
+	        	android:id="@+id/totalpage"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="right"
+	            android:gravity="center"
+	            android:text=""
+	            style="@style/pageinfostyle" />
+	    </LinearLayout>
+	    
+		<Button
+		    android:layout_width="wrap_content"
+			android:background="@drawable/recyclerbtn"
+			android:layout_height="wrap_content"  
+			android:layout_marginRight="430dp"
+			android:layout_marginTop="25dp"
+			android:layout_alignParentRight="true"
+			android:id="@+id/bt_recycler">
+		</Button>
+
+		<Button
+		    android:layout_width="wrap_content"
+			android:background="@drawable/btn_edit"
+			android:layout_height="wrap_content"  
+			android:layout_marginRight="200dp"
+			android:layout_marginTop="30dp"
+			 android:layout_alignParentRight="true"
+			android:id="@+id/bt_edit">
+		</Button>
+		<Button 
+		    android:layout_width="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="100dp"
+		    android:layout_marginTop="30dp"
+		    android:background="@drawable/btn_edit_focus"
+			android:layout_height="wrap_content"  
+			android:id="@+id/mydownload_edit">
+		</Button>
+		<Button android:layout_width="wrap_content"
+		    android:layout_marginRight="100dp"
+		    android:layout_marginTop="30dp"
+		    android:layout_alignParentRight="true"
+		    android:background="@drawable/btn_edit_finished"
+			android:layout_height="wrap_content"  
+			android:id="@+id/mydownload_cancel"
+			android:visibility="gone">
+		</Button>
+		<Button 
+		    android:layout_width="wrap_content"
+		    android:layout_marginRight="20dp"
+		    android:layout_marginTop="30dp"
+		   	android:layout_toLeftOf="@id/bt_edit"
+		    android:background="@drawable/uploadicobtn"
+			android:layout_height="wrap_content"  
+			android:id="@+id/bt_upload">
+		</Button>
+
+		<android.support.v4.view.ViewPager
+            android:id="@+id/myuploadMusicViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"/>
+		<LinearLayout  
+      		android:orientation="horizontal"        
+      		android:layout_width="match_parent" 
+      		android:layout_height="match_parent" 
+      		android:layout_gravity="center"
+      		android:gravity="center"
+      		android:id="@+id/loading" >        
+      		<ProgressBar 
+          		android:layout_width="wrap_content" 
+          		android:layout_height="wrap_content"            
+          		android:layout_gravity="center" />        
+  
+		</LinearLayout>
+		<LinearLayout
+		    android:orientation="horizontal"        
+      		android:layout_width="match_parent" 
+      		android:layout_height="match_parent"
+   			android:layout_marginLeft="20dp"
+      		android:layout_marginRight="20dp" 
+      		android:layout_marginTop="65dp"
+      		android:layout_gravity="center"
+      		android:gravity="center">
+      		<ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center" 
+	            android:src="@drawable/cutline1"/>
+		</LinearLayout>
+        <com.neteast.clouddisk.activity.FolderDrop
+ 		    android:id="@+id/folder_drop"
+			android:layout_width="fill_parent"
+		    android:layout_height="80dp"
+		    android:layout_gravity="top|right"
+		    android:gravity="right" 
+		    android:background="@drawable/drop_tip">	     
+		 </com.neteast.clouddisk.activity.FolderDrop>
+    </RelativeLayout>
+     <include layout="@layout/myuploadbottom"/>
+
+</com.neteast.clouddisk.customerview.DragLayer>

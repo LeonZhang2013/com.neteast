@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#00000000">
+    <RelativeLayout
+    	android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/uploadfile_return"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20dp"
+			android:layout_alignParentLeft="true"
+			android:src="@drawable/returnbuttonstyle"
+			android:background="#00000000" />
+        <TextView
+            android:id="@+id/uploadfile_title"
+        	android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#482126"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/uploading_notes"
+        	android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="10dp"
+            android:text="正在上传文件,请保持U盘连接"
+            android:layout_marginRight="120dp"
+            android:textColor="#ee2a03"
+            android:textSize="22sp"
+            android:visibility="gone"/>
+        <ImageButton
+            android:id="@+id/uploadfile_clearall"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="20dp"
+			android:src="@drawable/clearbtn"
+			android:background="#00000000"
+			android:visibility="gone" />
+	</RelativeLayout>
+
+     <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+	    <ListView
+	        android:id="@+id/upload_record_list"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+			android:layout_marginTop="5dp"  
+			android:layout_marginBottom="10dp"     
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" 
+	        android:cacheColorHint="#00000000"
+	        android:listSelector="#00000000"
+	        android:divider="@drawable/gapline1"
+	    	android:dividerHeight="4px">
+	    </ListView>
+	    
+	 </LinearLayout>
+	 <LinearLayout
+	    android:id="@+id/reuploadView"
+     	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+	   	<TextView 
+	    	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#482126"
+	        android:textSize="16sp"
+	        android:text="发现上传任务中有失败任务，是否决定"/>
+	    <ImageButton
+	    	android:id="@+id/reuploadbtn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/reuploadbtn"
+			android:background="#00000000" />
+	 </LinearLayout>
+	 <include layout="@layout/myuploadbottom"/>
+
+</LinearLayout>

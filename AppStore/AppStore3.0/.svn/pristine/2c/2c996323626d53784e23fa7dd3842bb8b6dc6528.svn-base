@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--选中自定义标签的字体颜色  -->
+    <color name="customtabtextcolor1">#E27C00</color>
+    <!--未选中自定义标签的字体颜色  -->
+    <color name="customtabtextcolor2">#B6B8B7</color>
+     <!--白色  -->
+    <color name="white">#FFFFFF</color>
+     <!--黑色  -->
+    <color name="black">#000000</color>
+    <!-- 未选中tab背景 -->
+    <color name="customertabbg">#DDDEDA</color>
+    <color name="progressbar">#41ADEB</color>
+</resources>

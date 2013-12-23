@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.content.ServiceConnection"/>
+<fullyQualifiedTypeName name="com.huawei.iptv.stb.asr.aidl.neteast.IAsrNeteastService.Stub"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="android.os.AsyncTask"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="android.os.IBinder"/>
+<fullyQualifiedTypeName name="com.huawei.iptv.stb.asr.aidl.neteast.Callback.Stub"/>
+<fullyQualifiedTypeName name="android.media.MediaRouter.Callback"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="org.simpleframework.xml.Serializer"/>
+<fullyQualifiedTypeName name="org.simpleframework.xml.core.Persister"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="com.neteast.lib.bean.SearchResult"/>
+<fullyQualifiedTypeName name="android.widget.ArrayAdapter"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.json.JSONObject"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="com.neteast.videotv.service.AsrNeteastService.MyQueryData"/>
+<fullyQualifiedTypeName name="com.huawei.iptv.stb.asr.aidl.neteast.IAsrNeteastService"/>
+<fullyQualifiedTypeName name="com.huawei.iptv.stb.asr.aidl.neteast.Callback"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="android.os.Handler"/>
+<fullyQualifiedTypeName name="java.lang.Long"/>
+<fullyQualifiedTypeName name="android.content.Context"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="org.json.JSONArray"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

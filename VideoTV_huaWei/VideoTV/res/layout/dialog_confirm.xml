@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_confirm_frame"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="639dp"
+        android:layout_height="212dp"
+        android:background="#101c2c">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:background="@drawable/bg_dialog_confirm_top"/>
+
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:text="您确定要退出视频天下？"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="72dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48dp">
+            <Button
+                android:id="@+id/confirmOK"
+                android:layout_width="130dp"
+                android:layout_height="42dp"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:background="@drawable/bg_btn_texture"
+                android:text="确定"
+                android:layout_marginRight="136dp"/>
+            <Button
+                android:id="@+id/confirmCancel"
+                android:layout_width="130dp"
+                android:layout_height="42dp"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:background="@drawable/bg_btn_texture"
+                android:text="取消"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

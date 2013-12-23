@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/friendbg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:text="清  除  缓  存"
+        android:textColor="#60370C"
+        android:textSize="25sp" />
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号密码"
+            android:textColor="#60370C"
+            android:textSize="20sp" >
+        </TextView>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radiobutton" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片缓存"
+            android:textColor="#60370C"
+            android:textSize="20sp" >
+        </TextView>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="临时文件"
+            android:textColor="#60370C"
+            android:textSize="20sp" >
+        </TextView>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/clearCacheQuXiao"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/ic_launcher" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.neteast.clouddisk"
+    android:versionCode="16777499"
+    android:versionName="1.0.1.21" xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.neteast.clouddisk.utils.DownLoadApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.neteast.clouddisk.activity.share" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.neteast.clouddisk.activity.music.widget" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.neteast.clouddisk.activity.picture.widget" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.RecommendActivity" >
+            <intent-filter>
+                <action android:name="com.neteast.clouddisk.activity.music.widget" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.neteast.clouddisk.activity.picture.widget" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.RecommendPictureActivity" ></activity>
+        <activity 
+            android:name=".activity.RecommendVideoActivity" 
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity android:name=".activity.RecommendNewsActivity" ></activity>
+        <activity android:name=".activity.RecommendMusicActivity" ></activity>
+        <activity android:name=".activity.RecommendAppActivity" ></activity>
+        <activity 
+            android:name=".activity.NewsDetailsActivity" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.SearchActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity android:name=".activity.SearchResultActivity1" ></activity>
+        <activity android:name=".activity.SearchResultActivity2" ></activity>
+        <activity android:name=".activity.SettingActivity" ></activity>
+        <activity android:name=".activity.UpgradeActivity" ></activity>
+        <activity
+            android:name=".activity.MyDownloadActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity android:name=".activity.MyDownloadVideoActivity" ></activity>
+        <activity android:name=".activity.MyDownloadMusicActivity" ></activity>
+        <activity android:name=".activity.MyDownloadPictureActivity" ></activity>
+        <activity android:name=".activity.MyUploadVideoActivity" ></activity>
+        <activity android:name=".activity.MyUploadMusicActivity" ></activity>
+        <activity
+            android:name=".activity.MyDownloadSeriesActivity"
+            android:theme="@style/myDialogTheme" >
+        </activity>
+        <activity android:name=".activity.MyUploadPictureActivity" ></activity>
+        <activity android:name=".activity.MyUploadFileActivity" ></activity>
+        <activity android:name=".activity.UploadFileActivity" ></activity>
+        <activity android:name=".activity.UploadRecordActivity" ></activity>
+        <activity android:name=".activity.UploadActivity" ></activity>
+        <activity
+            android:name=".activity.MyUploadActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.VideoPlaybackActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".activity.ImageSwitcher1"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.MovieDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.MiaoSouWebViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.FlashViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.RecyclerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.UploadAlertActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".activity.NoSpaceAlertActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+
+        <receiver
+            android:name="com.neteast.clouddisk.receiver.InstallReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.neteast.clouddisk.receiver.CloudVideoWidget"
+            android:icon="@drawable/video_poster_1"
+            android:label="@string/cloud_video_widget_label" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/cloud_video_widget" />
+        </receiver>
+        <receiver
+            android:name="com.neteast.clouddisk.receiver.CloudMusicWidget"
+            android:icon="@drawable/music_widget_bg"
+            android:label="@string/cloud_music_widget_label" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/cloud_music_widget" />
+        </receiver>
+        <receiver
+            android:name="com.neteast.clouddisk.receiver.CloudPictureWidget"
+            android:icon="@drawable/picture_poster_1"
+            android:label="@string/cloud_picture_widget_label" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/cloud_picture_widget" />
+        </receiver>
+        
+        <service
+            android:name="com.neteast.clouddisk.service.MediaPlaybackService"
+            android:exported="true" />
+        <service
+            android:name="com.neteast.clouddisk.service.UploadService"
+            android:exported="true" />
+        <service 
+            android:name="com.neteast.clouddisk.service.WidgetVideoUpdateService" />
+        <service 
+            android:name="com.neteast.clouddisk.service.WidgetPictureUpdateService" />
+    </application>
+
+</manifest>

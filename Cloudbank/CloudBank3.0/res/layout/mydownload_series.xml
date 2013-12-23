@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/mydownloadSeriesView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mydownload_series"
+        android:orientation="vertical" >
+        <include layout="@layout/mydownload_series_selimage"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/sourcetagView"
+		     	android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="top|left"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/mydown_source_tagbg"
+                android:gravity="left"
+                android:orientation="horizontal" >
+            	<com.neteast.clouddisk.customerview.MyHorizontalScrollView 
+                    android:id="@+id/sourcescroll"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:scrollbars="none" >
+					<FrameLayout 
+        				android:layout_width="fill_parent" 
+        				android:layout_height="match_parent">
+						<LinearLayout 
+							android:id="@+id/typegridline"
+		   					android:layout_width="1000dp"
+		   					android:layout_height="match_parent">
+		   					<GridView 
+						     	android:id="@+id/sourcegriditem"
+						     	android:gravity="center"
+						     	android:layout_width="fill_parent"
+						     	android:layout_height="fill_parent" 
+						     	android:stretchMode="spacingWidthUniform" 
+						     	android:numColumns="auto_fit" 
+						     	android:columnWidth="66dp"> 
+		   					</GridView>
+						</LinearLayout>
+					</FrameLayout>
+				</com.neteast.clouddisk.customerview.MyHorizontalScrollView>
+			</LinearLayout>
+			<LinearLayout
+		     	android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:layout_gravity="top|left"
+		        android:layout_marginRight="30dp"
+		        android:gravity="right">
+		        <TextView
+		        	android:id="@+id/series_pageinfo"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerHorizontal="true"
+		            android:layout_gravity="right"
+		            android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/sourcetagView"
+                android:orientation="vertical" >
+				<LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/baseline"
+                    android:orientation="horizontal" >
+                    </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/hdplaybtnView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+						android:id="@+id/hdplaybtn"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"		
+						android:layout_marginLeft="100dp"
+	                    android:gravity="center"
+						android:background="@drawable/detail_hdplaybtn_p" />
+                    <Button
+                        android:id="@+id/onlineplaybtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:layout_toRightOf="@+id/hdplaybtn"
+                        android:background="@drawable/detail_onlineplaybtn"                       
+                        android:gravity="center"/>           
+                    <Button
+                        android:id="@+id/offlinedownloadbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:layout_toRightOf="@+id/onlineplaybtn"
+                        android:background="@drawable/detail_offlinedownload"
+                        android:gravity="center"
+                        android:visibility="invisible"/>
+                </LinearLayout>
+                
+            </RelativeLayout>
+			    
+            <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_below="@+id/sourcetagView"
+	          	android:layout_marginTop="10dp"
+	            android:gravity="left"
+	            android:layout_marginLeft="30dp"
+	            android:orientation="horizontal">
+	             <ImageButton
+					android:id="@+id/sourceselbtn"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:background="#00000000" />
+	            <ImageView
+					android:id="@+id/series_small_left_arrow"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="30dp"
+					android:layout_marginTop="10dp"
+					android:layout_centerHorizontal="true"
+					android:background="@drawable/series_small_left_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_below="@+id/sourcetagView"
+	           	android:layout_marginTop="10dp"
+	            android:gravity="right"
+	            android:layout_marginRight="30dp"
+	            android:orientation="horizontal">
+	            <ImageView
+					android:id="@+id/series_small_right_arrow"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:layout_centerHorizontal="true"
+					android:layout_gravity="right"
+					android:background="@drawable/series_small_right_arrow" />
+	         </LinearLayout>
+
+			<LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:layout_below="@+id/sourcetagView"
+	            android:layout_toRightOf="@id/series_small_right_arrow"
+	    		android:layout_toLeftOf="@id/series_small_left_arrow"
+	            android:orientation="horizontal">
+	            <com.neteast.clouddisk.customerview.MyHorizontalScrollView 
+	        		android:layout_width="800dp" 
+	        		android:layout_height="wrap_content"
+	        		android:scrollbars="none"
+	        		android:layout_marginLeft="120dp"
+	        		android:layout_gravity="left"
+	        		android:id="@+id/seriesscroll">
+					<FrameLayout 
+	        			android:layout_width="fill_parent" 
+	        			android:layout_height="match_parent">
+	
+						<LinearLayout 
+							android:id="@+id/seriesgridline"
+			   				android:layout_width="1100dp"
+			   				android:layout_height="match_parent">
+			   				<GridView 
+							     android:id="@+id/seriesgriditem"
+							     android:gravity="center"
+							     android:layout_width="fill_parent"
+							     android:layout_height="fill_parent" 
+							     android:stretchMode="spacingWidthUniform" 
+							     android:numColumns="auto_fit" 
+							     android:columnWidth="80dp"> 
+			   				</GridView>
+						</LinearLayout>
+					</FrameLayout>
+				</com.neteast.clouddisk.customerview.MyHorizontalScrollView>
+	      </LinearLayout>
+
+		</RelativeLayout>
+		<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+            <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="50dp"
+	            android:gravity="left" >
+           	<ImageView
+				android:id="@+id/series_big_left_arrow"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				
+				android:layout_gravity="left"
+				android:background="@drawable/series_big_left_arrow" />
+           	</LinearLayout>
+           	<LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	           android:layout_marginTop="50dp"
+	            android:gravity="right">    
+			<ImageView
+				android:id="@+id/series_big_right_arrow"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				
+				android:layout_gravity="right"
+				android:background="@drawable/series_big_right_arrow" />
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/seriesgridLayout"
+		    	android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		    	android:layout_toRightOf="@id/series_big_right_arrow"
+		    	android:layout_toLeftOf="@id/series_big_left_arrow"
+		        android:orientation="horizontal">
+
+				<android.support.v4.view.ViewPager
+		            android:id="@+id/mydownloadSeriesViewPager"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent" 
+		            android:gravity="center"
+		            android:layout_marginLeft="30dp"
+		            android:layout_marginRight="30dp"/>
+			</LinearLayout>
+		</RelativeLayout>
+
+        
+	</LinearLayout>
+</LinearLayout>

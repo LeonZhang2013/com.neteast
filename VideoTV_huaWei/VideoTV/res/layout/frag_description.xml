@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="800dp"
+        android:layout_height="600dp"
+        android:scrollbars="none"
+        >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:lineSpacingExtra="5dp"
+            android:lineSpacingMultiplier="1.1"
+            android:background="@drawable/bg_dialog"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="62dp"
+            />
+    </ScrollView>
+
+
+</FrameLayout>

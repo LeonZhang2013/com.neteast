@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<item>
+		<image>assets_icon_11.png</image>
+		<title>健康宣教</title>
+		<contenturl>dongzp.xml</contenturl>
+	</item>
+	<item>
+		<image>assets_icon_12.png</image>
+		<title>医院介绍</title>
+		<contenturl></contenturl>
+	</item>
+	<item>
+		<image>assets_icon_13.png</image>
+		<title>特色专科</title>
+		<contenturl></contenturl>
+	</item>
+	<item>
+		<image>assets_icon_14.png</image>
+		<title>专家介绍</title>
+		<contenturl></contenturl>
+	</item>
+	<item>
+		<image>assets_icon_15.png</image>
+		<title>收费标准</title>
+		<contenturl></contenturl>
+	</item>
+</root>

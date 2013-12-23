@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_title_can_focus"
+    android:textColor="@color/nav_sub_text"
+    android:textSize="22sp"
+    android:gravity="left|center_vertical"
+    android:singleLine="true"
+    android:ellipsize="marquee"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_columnSpan="2"
+    android:layout_marginBottom="4dp"
+    android:visibility="invisible"
+    />

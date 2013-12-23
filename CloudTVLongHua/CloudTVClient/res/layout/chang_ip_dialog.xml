@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" >
+        <Button   
+            android:id="@+id/change_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="换地址"
+            />
+        
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="推送方式:"
+            android:textColor="#FFFFFF" />
+
+        <ToggleButton
+            android:id="@+id/isch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="HFC"
+            android:textOn="IP" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="点播:"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/demand_path"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="EPG:"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/epg_path"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="图片:"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/photo_path"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="播放:"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/play_path"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:singleLine="true" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="his:"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/his_path"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:singleLine="true" />
+
+</LinearLayout>

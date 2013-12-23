@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/versionbg"
+    android:paddingBottom="20dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textColor="#60370C"
+        android:text="版  本  信  息"
+        android:textSize="28sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#60370C"
+        android:text="改进皮肤渲染引擎，优化响应速度以及与应用程序的兼容性.重新加入配置字体大小以及迷你状态栏功能。统一32/64位Windows系统的安装程序" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/shengji"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/shengjibg" />
+
+        <ImageButton
+            android:id="@+id/quxiao"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/cancel" />
+    </LinearLayout>
+
+</LinearLayout>

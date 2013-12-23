@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/imagecontrolerbg"
+    android:gravity="center"
+    android:layout_marginBottom="50dip">
+		<LinearLayout
+        	android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+        	android:layout_marginLeft="100dp"
+            android:orientation="horizontal" >
+            <Button
+            	android:id="@+id/pptTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/slidershowbtn"/>
+
+		</LinearLayout>
+
+        <LinearLayout
+        	android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+        	android:gravity="center"
+            android:orientation="horizontal" >
+            <Button
+            	android:id="@+id/lefRouteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:background="@drawable/leftroutebtn"/>
+            <Button
+            	android:id="@+id/rightRouteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/rightroutebtn"/>
+            
+            
+		</LinearLayout>
+                
+        <LinearLayout
+        	android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+        	android:gravity="center"
+            android:orientation="horizontal" >
+            <Button
+            	android:id="@+id/deleteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/imagedelbtn"/>
+             <Button
+            	android:id="@+id/setWallpaper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/setwallpaperbtn"/>
+        </LinearLayout>
+        
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="340dp"
+        android:background="@drawable/login_bg"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="15dp" >
+
+            <TextView
+                android:id="@+id/login_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/login_warning"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" 
+                android:visibility="gone"/>
+
+            <ProgressBar
+                android:id="@+id/login_progress"
+                style="@style/BlueProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:text="帐号"
+                android:textColor="#ff7a7a7a"
+                android:textSize="22.0sp" />
+
+            <EditText
+                android:id="@+id/login_account"
+                style="@style/LoginEdit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:hint="请输入帐号"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:text="密码"
+                android:textColor="#ff7a7a7a"
+                android:textSize="22.0sp" />
+
+            <EditText
+                android:id="@+id/login_password"
+                style="@style/LoginEdit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:hint="请输入密码"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <Button
+                android:id="@+id/login_ok"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/white_btn"
+                android:text="@android:string/ok"
+                android:textColor="@color/default_text"
+                android:textSize="16.0sp" />
+
+            <Button
+                android:id="@+id/login_cancel"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/white_btn"
+                android:text="@android:string/cancel"
+                android:textColor="@color/default_text"
+                android:textSize="16.0sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

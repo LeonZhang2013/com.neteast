@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg" >
+
+    <GridView
+        android:layout_marginTop="91dp"
+        android:id="@+id/grid_view_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#333333"
+        android:cacheColorHint="#FFFFFF"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"
+        android:verticalSpacing="1dp" >
+    </GridView>
+
+    <include layout="@layout/title_logo_layout" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="563dp" />
+
+</RelativeLayout>

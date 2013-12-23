@@ -1,0 +1,6 @@
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="15dp"
+    android:layout_height="15dp"
+    android:background="@drawable/page_flag_style"
+    android:button="@null" />

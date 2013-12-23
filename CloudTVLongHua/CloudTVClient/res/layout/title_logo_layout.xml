@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:background="@drawable/title_bg"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/activity_logo"
+        android:layout_width="326dp"
+        android:layout_height="39dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/company_name"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/activity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:contentDescription="@string/app_name"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp" />
+
+    <ImageView
+        android:id="@+id/ip_config"
+        android:layout_width="155dp"
+        android:layout_height="137dp"
+        android:layout_marginLeft="50dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/app_logo" />
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="73dp"
+        android:layout_height="43dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="25dp"
+        android:background="@drawable/back_btn"
+        android:onClick="onClickBack" />
+
+</RelativeLayout>

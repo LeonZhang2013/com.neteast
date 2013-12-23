@@ -1,0 +1,9 @@
+# cache for current jar dependency. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1385693898639 33121 fdda60db14ddaf113b64719c4e57cc0e19573ff6 D:\workSpace\VideoTV\VideoTV\libs\http-request-5.4.jar
+1385693910662 33121 fdda60db14ddaf113b64719c4e57cc0e19573ff6 D:\workSpace\VideoTV\NetLibrary\libs\http-request-5.4.jar
+1385693910665 388474 a0e0566344e56ec1399a6ad93de0cd72b22ea361 D:\workSpace\VideoTV\NetLibrary\libs\simple-xml-2.6.6.jar
+1385693898653 388474 a0e0566344e56ec1399a6ad93de0cd72b22ea361 D:\workSpace\VideoTV\VideoTV\libs\simple-xml-2.6.6.jar
+1385693898662 1891110 0d6f22b1e60a2f1ef99e22c9f5fde270b2088365 D:\workSpace\VideoTV\VideoTV\libs\guava-13.0.1.jar
+1385693910718 1891110 0d6f22b1e60a2f1ef99e22c9f5fde270b2088365 D:\workSpace\VideoTV\NetLibrary\libs\guava-13.0.1.jar

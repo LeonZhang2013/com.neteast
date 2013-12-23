@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#A8A8A8"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/fourthdatabg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5px" >
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="共搜索出相关应用38个"
+                android:textColor="#f9a239"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/pagewithtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="1/21"
+                android:textColor="#656361"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageButton android:id="@+id/searchLeftPageButton"
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/leftbutton2"
+            android:onClick="prePageButtonHandler" />
+
+        <ViewFlipper
+            android:id="@+id/searchViewFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true" >
+
+        </ViewFlipper>
+
+        <ImageButton android:id="@+id/searchRightPageButton"
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rightbutton1"
+            android:onClick="nextPageButtonHandler"/>
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

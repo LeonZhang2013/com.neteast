@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="1044dp"
+        android:layout_height="588dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_dialog">
+
+        <HorizontalScrollView
+            android:id="@+id/choice_title_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="23dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/choice_title_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+        </HorizontalScrollView>
+
+
+        <GridLayout
+            android:id="@+id/choice_count_grid"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="10"
+            android:alignmentMode="alignBounds"
+            android:rowCount="5"
+            android:useDefaultMargins="true"
+            android:layout_marginTop="53dp"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/grid1"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid2"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid3"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid4"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid5"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid6"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid7"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid8"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid9"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid10"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid11"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid12"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid13"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid14"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid15"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid16"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid17"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid18"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid19"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid20"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid21"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid22"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid23"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid24"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid25"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid26"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid27"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid28"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid29"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid30"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid31"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid32"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid33"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid34"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid35"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid36"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid37"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid38"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid39"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid40"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid41"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid42"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid43"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid44"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid45"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid46"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid47"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid48"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid49"
+                style="@style/Detail.Choice.Count"/>
+
+            <TextView
+                android:id="@+id/grid50"
+                style="@style/Detail.Choice.Count"/>
+
+        </GridLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/my_spend_money"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="91dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="104dp"
+            android:background="@drawable/table_title" >
+
+            <TextView
+                android:id="@+id/charging_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="40dp"
+                android:text="检查日期:"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/calendar_item_text"
+                android:layout_width="230dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@id/charging_one"
+                android:background="@drawable/dark_blue_empty_rect"
+                android:gravity="center_vertical"
+                android:paddingRight="2dp"
+                android:drawableRight="@drawable/charging_item_btn"
+                android:paddingLeft="7dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+             <Button
+                android:id="@+id/calendar_item_btn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/calendar_item_text"
+                android:background="@drawable/calendar"
+                android:onClick="onSelectCalender" /> 
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/patient_desc"
+            android:layout_width="1200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#000000"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/list_view_charging_title"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:background="#000000"
+                android:orientation="horizontal" />
+
+            <ListView
+                android:id="@+id/list_view_charging"
+                android:layout_width="fill_parent"
+                android:cacheColorHint="#CCCCCC"
+                android:layout_height="280dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#FFFFFF"
+                android:divider="@drawable/grey"
+                android:orientation="vertical" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/title_logo_layout" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/exhibit_progress" />
+
+</RelativeLayout>

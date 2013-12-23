@@ -1,0 +1,62 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.neteast.cloudtv2"
+    android:versionCode="21"
+    android:versionName="1.0.0.21" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="12" />
+    
+    <instrumentation android:targetPackage="com.neteast.cloudtv2" android:name="android.test.InstrumentationTestRunner"></instrumentation>
+
+    <application
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/fly_logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        
+        <activity
+            android:name=".MainActivity"
+             android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />                   
+                <category android:name="android.intent.category.DEFAULT" />  
+            </intent-filter>
+        </activity>
+        
+       <activity
+            android:name=".ToLeadViewActivity" android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".play.PlayerActivity" android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.VideoGridViewActivity" android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.ImageViewActivity" android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.ChargeStandardActivity" android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.MyCostActivity" android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.CheckupReportAcitvity" android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.AnalysisReportAcitvity" android:screenOrientation="landscape"/>
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+    </application>
+    
+
+
+</manifest>

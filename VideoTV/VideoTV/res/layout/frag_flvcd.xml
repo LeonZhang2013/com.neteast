@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="600dp"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_dialog"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@android:style/Widget.Holo.ProgressBar.Large"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                />
+            <ImageView
+                android:id="@+id/failure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_failure"
+                android:visibility="invisible"/>
+            </FrameLayout>
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="正在解析视频资源"
+            />
+    </LinearLayout>
+</FrameLayout>

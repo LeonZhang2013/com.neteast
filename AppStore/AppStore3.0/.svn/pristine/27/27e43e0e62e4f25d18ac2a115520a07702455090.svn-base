@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 每一个应用的布局 -->
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ImageView
+		android:id="@+id/elementimageView"
+		android:layout_width="70dp"
+		android:layout_height="70dp"
+		android:adjustViewBounds="true" 
+		android:layout_alignParentTop="true"/>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_toRightOf="@id/elementimageView"
+		android:paddingLeft="10dp" 
+		android:layout_alignParentTop="true">
+		<TextView
+		    android:id="@+id/app_name"
+			android:layout_width="170dp"
+			android:layout_height="wrap_content"
+			style="@style/appname" 
+			android:singleLine="true"/>
+		<TextView
+		    android:id="@+id/app_type"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/apptype" />
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical">
+			<RatingBar
+			    android:id="@+id/star_view"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				style="@style/ratingstyle"
+				android:isIndicator="true" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				style="@style/apptype" />
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

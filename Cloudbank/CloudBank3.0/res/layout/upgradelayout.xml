@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/contentbg"
+	android:orientation="vertical" >
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_marginTop="15dp"
+		android:layout_weight="1" >
+		<ImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="50dp"
+			android:background="@drawable/returnbutton"
+			android:onClick="returnOnclick" />
+		<TextView
+			style="@style/upgradetextstyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="会员升级" />
+	</RelativeLayout>
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:src="@drawable/gapline1" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="8"
+		android:orientation="horizontal" >
+		<!-- VIP布局 -->
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:orientation="vertical" >
+			<TextView
+				style="@style/upgradetextstyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="30dp"
+				android:gravity="center_horizontal"
+				android:text="VIP会员特权" />
+			<TextView
+				style="@style/settingotherstyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="50dp"
+				android:layout_marginTop="50dp"
+				android:drawableLeft="@drawable/upgradetextviewico"
+				android:text="空间大小=10G/年" />
+			<TextView
+				style="@style/settingotherstyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="50dp"
+				android:layout_marginTop="20dp"
+				android:drawableLeft="@drawable/upgradetextviewico"
+				android:text="增加互动/分享权限" />
+			<TextView
+				style="@style/settingotherstyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="50dp"
+				android:layout_marginTop="20dp"
+				android:drawableLeft="@drawable/upgradetextviewico"
+				android:text="无限期保留上传文件、时间限制" />
+			<TextView
+				style="@style/settingotherstyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="50dp"
+				android:layout_marginTop="20dp"
+				android:drawableLeft="@drawable/upgradetextviewico"
+				android:text="预约下载保留7天" />
+			<TextView
+				style="@style/settingcapacitystyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="50dp"
+				android:layout_marginTop="50dp"
+				android:text="5元/月（优惠50元/年）" />
+			<ImageButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="50dp"
+				android:background="@drawable/purchasebtstyle" />
+		</LinearLayout>
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:src="@drawable/gapline3" />
+		<!-- VVIP布局 -->
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:orientation="vertical" >
+			<TextView
+				style="@style/upgradetextstyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="30dp"
+				android:gravity="center_horizontal"
+				android:text="VVIP会员特权" />
+			<TextView
+				style="@style/settingotherstyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="40dp"
+				android:layout_marginTop="50dp"
+				android:drawableLeft="@drawable/upgradetextviewico"
+				android:text="空间大小=10G/年" />
+			<TextView
+				style="@style/settingotherstyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="40dp"
+				android:layout_marginTop="20dp"
+				android:drawableLeft="@drawable/upgradetextviewico"
+				android:text="增加互动/分享权限" />
+			<TextView
+				style="@style/settingotherstyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="40dp"
+				android:layout_marginTop="20dp"
+				android:drawableLeft="@drawable/upgradetextviewico"
+				android:text="无限期保留上传文件、时间限制" />
+			<TextView
+				style="@style/settingotherstyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="40dp"
+				android:layout_marginTop="20dp"
+				android:drawableLeft="@drawable/upgradetextviewico"
+				android:text="预约下载保留14天" />
+			<TextView
+				style="@style/settingcapacitystyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="40dp"
+				android:layout_marginTop="50dp"
+				android:text="10元/月（优惠100元/年）" />
+			<ImageButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="50dp"
+				android:background="@drawable/purchasebtstyle" />
+		</LinearLayout>
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:src="@drawable/gapline3" />
+		<!-- 3VIP布局 -->
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:orientation="vertical" >
+			<TextView
+				style="@style/upgradetextstyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="30dp"
+				android:gravity="center_horizontal"
+				android:text="3VIP会员特权" />
+			<TextView
+				style="@style/settingotherstyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="40dp"
+				android:layout_marginTop="50dp"
+				android:drawableLeft="@drawable/upgradetextviewico"
+				android:text="空间大小=10G/年" />
+			<TextView
+				style="@style/settingotherstyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="40dp"
+				android:layout_marginTop="20dp"
+				android:drawableLeft="@drawable/upgradetextviewico"
+				android:text="增加互动/分享权限" />
+			<TextView
+				style="@style/settingotherstyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="40dp"
+				android:layout_marginTop="20dp"
+				android:drawableLeft="@drawable/upgradetextviewico"
+				android:text="无限期保留上传文件、时间限制" />
+			<TextView
+				style="@style/settingotherstyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="40dp"
+				android:layout_marginTop="20dp"
+				android:drawableLeft="@drawable/upgradetextviewico"
+				android:text="预约下载保留30天" />
+			<TextView
+				style="@style/settingcapacitystyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="40dp"
+				android:layout_marginTop="50dp"
+				android:text="20元/月（优惠200元/年）" />
+			<ImageButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="50dp"
+				android:background="@drawable/purchasebtstyle" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

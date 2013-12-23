@@ -1,0 +1,2 @@
+1、VideoDetailActivity.java    		          修改了电影和电视剧的 显示方式 。
+2、SearchService                                  添加 查询服务

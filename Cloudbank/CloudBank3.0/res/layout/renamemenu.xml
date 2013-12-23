@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="80dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/renamebg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/renametitle"
+                style="@style/upgradetextstyle"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="重命名" />
+
+            <TextView
+                android:id="@+id/renametext"
+                style="@style/renametextstyle"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="请输入文件名称" />
+
+            <EditText
+                android:id="@+id/rename_input_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/renameeditbg"
+                android:maxLength="25"
+                android:singleLine="true"
+                android:textColor="#683214" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/okbtn" >
+            </Button>
+
+            <Button
+                android:id="@+id/bt_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/cancelbtn" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

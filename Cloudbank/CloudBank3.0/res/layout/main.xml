@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+	<!-- 头布局 -->
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:background="@drawable/recommendtopbg" >
+		<!-- 搜索按钮 -->
+		<ImageButton
+			android:id="@+id/searchbutton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="10dp"
+			android:background="@drawable/searcherico" />
+		
+		<!-- 设置和搜索中间部分 -->
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_toLeftOf="@id/searchbutton" >
+			<!-- 播放器 -->
+			<RelativeLayout
+			    android:id="@+id/musicPlayerView"
+				android:layout_width="365dp"
+				android:layout_height="49dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginTop="20dp"
+				android:background="@drawable/miniplayerbg" 
+				android:visibility="gone">
+				<ImageButton
+					android:id="@+id/musicplaymode"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:layout_marginRight="5dp"
+					android:layout_alignParentRight="true"
+					android:src="@drawable/orderbtn" 
+					android:background="#00000000"/>
+				<ImageButton
+					android:id="@+id/musicstartorpause"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:layout_marginLeft="3dp"
+					
+					android:layout_alignParentLeft="true"
+					android:src="@drawable/playerbutton" 
+					android:background="#00000000"/>
+				<ImageButton
+					android:id="@+id/musicprev"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:layout_marginLeft="6dp"
+					android:layout_toRightOf="@id/musicstartorpause"
+					
+					android:src="@drawable/musicprev"
+					android:background="#00000000" />
+
+				<ImageButton
+					android:id="@+id/musicnext"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:layout_marginLeft="8dp"
+					android:layout_toRightOf="@id/musicprev"					
+					android:src="@drawable/musicnext" 
+					android:background="#00000000"/>
+				
+				<TextView
+				    android:id="@+id/musicName"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:layout_marginTop="5dp"
+					android:gravity="center"
+					android:textSize = "16dp"
+					android:layout_gravity="center"
+					android:layout_toLeftOf="@id/musicplaymode"
+					android:layout_toRightOf="@id/musicnext"
+					android:text="" />
+
+				<SeekBar
+					android:id="@+id/musicseekbar"
+					style="@android:style/Widget.ProgressBar.Horizontal"
+					android:layout_width="165dp"
+					android:layout_height="wrap_content"
+					android:layout_alignParentBottom="true"
+					android:max="100"
+					android:layout_marginLeft="140dp"
+					android:layout_marginRight="50dp"
+					android:progress="0"
+					android:progressDrawable="@drawable/seekbarstyle"
+					android:thumb="@drawable/playerprogressbutton"
+					android:thumbOffset="1dp"
+					android:maxHeight="26dip"
+	    			android:minHeight="26dip"  />
+			</RelativeLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="400dp"
+				android:layout_marginRight="150dp"
+				android:layout_centerVertical="true"
+				android:layout_alignParentTop="true"
+				android:gravity="top" >
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					 >
+					<ImageButton
+					    android:id="@+id/recommendbutton"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:scaleType="fitCenter"
+						android:background="@drawable/recommendico" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					 >
+					<ImageButton
+					    android:id="@+id/myuploadbutton"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:scaleType="fitCenter"
+						android:background="@drawable/myuploadico" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					 >
+					<ImageButton
+					    android:id="@+id/mydownloadbutton"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:scaleType="fitCenter"
+						android:background="@drawable/mydownloadico" />
+				</LinearLayout>
+			</LinearLayout>
+		</RelativeLayout>
+	</RelativeLayout>
+	<!-- 下方布局 -->
+	<RelativeLayout
+			android:id="@+id/datacontainer"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="6">
+	</RelativeLayout>
+</LinearLayout>

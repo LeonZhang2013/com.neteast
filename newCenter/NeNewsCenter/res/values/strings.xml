@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">消息盒子</string>
+    
+    <string name="hint_input_phone">请输入电话</string>
+    <string name="hint_input_email">请输入邮箱</string>
+    <string name="hint_input_im">请输入IM号</string>
+    <string name="hint_input_location">请输入地址</string>
+
+</resources>

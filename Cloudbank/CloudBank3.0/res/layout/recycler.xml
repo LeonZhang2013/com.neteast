@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+		<!-- 顶部导航栏 -->
+    <LinearLayout
+        android:id="@+id/recyclerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          
+            android:orientation="horizontal" >    
+            <ImageButton
+	            android:id="@+id/recycler_return"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="30dp"
+				android:layout_marginTop="25dp"
+				android:src="@drawable/returnbuttonstyle"
+				android:background="#00000000" />
+			<LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="500dp"
+	            android:layout_marginTop="25dp"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal" >
+	            <Button
+	                android:id="@+id/btnSelectAll"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/selectallbtn"/>
+	            <Button
+	                android:id="@+id/btnCancel"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	               	android:background="@drawable/cleanallbtn"
+	               	android:visibility="gone"/>
+	            <Button
+	                android:id="@+id/btnclear"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="15dp"
+	                android:background="@drawable/clear_recyclerbtn"/>
+	            <Button
+	                android:id="@+id/btnrecover"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                 android:layout_marginLeft="15dp"
+	                android:background="@drawable/recoverbtn"/>
+	             <Button
+	                android:id="@+id/btndel"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                 android:layout_marginLeft="15dp"
+	                android:background="@drawable/delbtn"/>
+	        </LinearLayout>
+	        
+			<LinearLayout
+		    	android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:background="@drawable/pageinfobg"
+		        android:layout_marginRight="25dp"
+		        android:layout_marginLeft="15dp"
+		        android:orientation="vertical" >
+		        <TextView
+		        	android:id="@+id/curentpage"
+		            android:layout_width="50dp"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="left"
+		            android:gravity="center"
+		            android:text=""
+		            style="@style/pageinfostyle" />
+		        <TextView
+		        	android:id="@+id/totalpage"
+		            android:layout_width="50dp"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="right"
+		            android:gravity="center"
+		            android:text=""
+		            style="@style/pageinfostyle" />
+	    </LinearLayout>
+	    </LinearLayout>
+
+
+   		<android.support.v4.view.ViewPager
+			android:id="@+id/recyclerViewPager"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" 
+		    android:layout_marginTop="40dp"
+		    android:layout_marginLeft="30dp"
+	        android:layout_marginRight="30dp"
+		    android:gravity="center"/>
+   		<LinearLayout  
+      		android:orientation="horizontal"        
+      		android:layout_width="match_parent" 
+      		android:layout_height="match_parent" 
+      		android:layout_gravity="center"
+      		android:gravity="center"
+      		android:id="@+id/loading" >        
+      		<ProgressBar 
+          		android:layout_width="wrap_content" 
+          		android:layout_height="wrap_content"            
+          		android:layout_gravity="center" />        
+  
+		</LinearLayout>
+
+    </LinearLayout>
+    
+ 	<include layout="@layout/myuploadbottom"/>
+</LinearLayout>

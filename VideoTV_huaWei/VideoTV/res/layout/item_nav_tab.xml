@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/Nav.Tab"
+              android:orientation="vertical"
+              android:layout_width="@dimen/nav_tab_bar_width"
+              android:layout_height="@dimen/nav_tab_height"
+              android:gravity="center"
+              android:focusable="true"
+              android:clickable="true">
+
+    <ImageView android:id="@+id/icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:contentDescription="@string/nav_tab_image"
+               android:duplicateParentState="true"
+        />
+
+    <TextView android:id="@+id/title"
+              style="@style/Nav.Tab_TabText"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:duplicateParentState="true"
+              android:layout_marginTop="2dp"
+              android:textSize="@dimen/nav_tab_text_size"
+        />
+</LinearLayout>

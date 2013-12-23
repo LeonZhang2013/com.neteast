@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.neteast.cloudtv.view.MySpendMoney xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/check_report"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="104dp"
+        android:background="@drawable/table_title" >
+
+        <TextView
+            android:id="@+id/charging_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="检查日期:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/calendar_item_text2"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@id/charging_one"
+            android:focusable="false" />
+
+        <Button
+            android:id="@+id/calendar_item_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_toRightOf="@id/calendar_item_text2"
+            android:background="@drawable/calendar" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="1180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/TableStyle_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="姓名：王小虎" />
+
+        <TextView
+            style="@style/TableStyle_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="类型：门诊" />
+
+        <TextView
+            style="@style/TableStyle_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="床号：123" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/TableStyle_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="性别：男" />
+
+        <TextView
+            style="@style/TableStyle_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="申请医生：万大夫" />
+
+        <TextView
+            style="@style/TableStyle_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="申请时间：12月3日" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/TableStyle_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="出生时间：2011年3月13日" />
+
+        <TextView
+            style="@style/TableStyle_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="诊断：感冒" />
+
+        <TextView
+            style="@style/TableStyle_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="备注：" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/TableStyle_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="接收时间：2011年3月13日" />
+
+        <TextView
+            style="@style/TableStyle_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="检验师：胡立即" />
+
+        <TextView
+            style="@style/TableStyle_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="审核者：" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/TableStyle_1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:text="影响学表现：" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="---------------------------------------------------------------------------------------------------------------------------------------------------------------" />
+
+    <TextView
+        style="@style/TableStyle_1"
+        android:layout_width="1180dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="医学影像学不仅扩大了人体的检查范围，提高了诊断水平，而且可以对某引些疾病进行治疗。这样，就大大地扩展了本学科的工作内容，并成为医疗工作中的重要支柱" />
+
+</com.neteast.cloudtv.view.MySpendMoney>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="nav_tab_list_bg">#27303F</color>
+    <color name="nav_sub_list_bg">#222831</color>
+
+    <color name="nav_tab_text_selected_color">#77c4fb</color>
+    <color name="nav_tab_text_focus_color">#ffffffff</color>
+    <color name="nav_tab_text_normal_color">#ffffffff</color>
+
+    <color name="nav_sub_text_blue">#00a8ff</color>
+    <color name="nav_sub_text_white">#ffffffff</color>
+
+    <color name="image_mask_color">#99000000</color>
+
+    <drawable name="transparent">#00000000</drawable>
+
+    <color name="poster_count_text_color">#FFFFFFFF</color>
+    <color name="poster_count_text_background">#99000000</color>
+    <color name="poster_title_text_color">#FFFFFFFF</color>
+
+    <color name="home_page_light_blue">#a1e2f6</color>
+    <color name="home_page_orange">#ff6600</color>
+    <color name="home_page_yellow">#ffea01</color>
+    <color name="home_page_dark_blue">#0b71bb</color>
+    <color name="home_page_green">#7ab118</color>
+    <color name="home_page_pinke">#f07353</color>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recommendpictureelementlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <FrameLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_gravity="center"
+        android:orientation="vertical" 
+        android:background="@drawable/recommendimagebg">
+        <ImageView
+        	android:id="@+id/imageView"
+            android:layout_width="141dp"
+            android:layout_height="141dp"
+            android:layout_gravity="center" 
+            android:scaleType="fitCenter"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/imagesLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView
+        	android:id="@+id/imageView1"
+            android:layout_width="141dp"
+            android:layout_height="141dp"
+            android:layout_gravity="center" 
+            android:scaleType="fitCenter"/>
+         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:background="@drawable/recommendimagesbg" />
+       	<LinearLayout
+	    	android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom|right"
+	        android:layout_marginBottom="10dp"
+	        android:layout_marginRight="10dp"
+	        android:background="@drawable/imagesnumbg"
+	        android:orientation="vertical" >
+       		<TextView
+	        	android:id="@+id/imagesnumText"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:layout_gravity="center"
+	            style="@style/imagesnumstyle"
+	            android:text=""/>
+       	</LinearLayout>
+    </FrameLayout>
+</LinearLayout>

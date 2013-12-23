@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--二级频道-->
+    <ScrollView
+        android:id="@+id/ChannelListScroll"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:background="@color/nav_sub_list_bg"
+        android:scrollbars="none">
+        <com.neteast.videotv.ui.widget.ChannelList
+            android:id="@+id/ChannelList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </ScrollView>
+    <!--阴影-->
+    <include
+        layout="@layout/layout_shadow"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="17dp">
+
+            <RadioGroup
+                android:id="@+id/sortSelector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+                <RadioButton
+                    android:id="@+id/sortByHot"
+                    style="@style/Topic.SortButton"
+                    android:layout_width="80dp"
+                    android:layout_height="39dp"
+                    android:text="@string/topic_by_hot"
+                    android:checked="true"
+                    android:layout_marginRight="14dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/sortByTime"
+                    style="@style/Topic.SortButton"
+                    android:layout_width="80dp"
+                    android:layout_height="39dp"
+                    android:text="@string/topic_by_time"
+                    android:layout_marginRight="14dp"
+                    />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/filter"
+                android:layout_width="80dp"
+                android:layout_height="39dp"
+                android:text="筛选"
+                android:gravity="center"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_marginLeft="8dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_radio"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/searchInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="17dp"
+            android:singleLine="true"
+            android:visibility="gone"
+            />
+
+        <HorizontalScrollView
+            android:id="@+id/searchScroller"
+            android:layout_width="555dp"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="70dp"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:id="@+id/searchContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="8dp"
+                />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/filterInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="17dp"
+            android:layout_gravity="center_horizontal|top"
+            android:visibility="gone"
+            />
+
+        <FrameLayout
+            android:id="@+id/viewFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="95dp"
+            android:layout_marginLeft="75dp"
+            >
+
+            <GridLayout
+                android:id="@+id/grid1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="5"
+                android:rowCount="2"
+                android:alignmentMode="alignBounds"
+                android:gravity="center"
+                android:alwaysDrawnWithCache="true"
+                />
+            <GridLayout
+                android:id="@+id/grid2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="5"
+                android:rowCount="2"
+                android:alignmentMode="alignBounds"
+                android:gravity="center"
+                android:alwaysDrawnWithCache="true"
+                />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/countInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/detail_sourcebg"
+	android:orientation="vertical" >
+	<com.neteast.clouddisk.customerview.MyHorizontalScrollView 
+        android:layout_width="589dp" 
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:id="@+id/sourcescroll"
+        >
+		<FrameLayout 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="match_parent">
+
+			<LinearLayout 
+				android:id="@+id/typegridline"
+   				android:layout_width="1000dp"
+   				android:layout_height="match_parent"
+   				android:gravity="center"
+   				android:layout_gravity="center">
+   				<GridView 
+				     android:id="@+id/sourcegriditem"
+				     android:gravity="center"
+				     android:layout_gravity="center"
+				     android:layout_width="fill_parent"
+				     android:layout_height="fill_parent" 
+				     android:stretchMode="spacingWidthUniform" 
+				     android:numColumns="auto_fit" 
+				     android:layout_marginTop="8dp"
+				     android:columnWidth="66dp"> 
+   				</GridView>
+			</LinearLayout>
+	</FrameLayout>
+</com.neteast.clouddisk.customerview.MyHorizontalScrollView>
+
+</LinearLayout>

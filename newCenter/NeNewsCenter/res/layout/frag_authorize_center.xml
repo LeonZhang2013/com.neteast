@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="41dp" >
+
+            <Button
+                android:id="@+id/authorize_back"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/share_back"/>
+            <View 
+                android:layout_width="71dp"
+                android:layout_height="18dp"
+                android:background="@drawable/authorize_center_top"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="分享到腾讯微博"
+                android:textColor="@color/darkGreen"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/authorize_qq"
+                style="@android:style/Widget.Button"
+                android:layout_width="66dp"
+                android:layout_height="28dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/share_bind"/>
+        </FrameLayout>
+        
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp" 
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="分享到新浪微博"
+                android:textColor="@color/darkGreen"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/authorize_sina"
+                style="@android:style/Widget.Button"
+                android:layout_width="66dp"
+                android:layout_height="28dp"
+                android:layout_gravity="right|center_vertical"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp" 
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="分享到人人网"
+                android:textColor="@color/darkGreen"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/authorize_renren"
+                style="@android:style/Widget.Button"
+                android:layout_width="66dp"
+                android:layout_height="28dp"
+                android:layout_gravity="right|center_vertical"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp" 
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="分享到开心网"
+                android:textColor="@color/darkGreen"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/authorize_kaixin"
+                style="@android:style/Widget.Button"
+                android:layout_width="66dp"
+                android:layout_height="28dp"
+                android:layout_gravity="right|center_vertical"/>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

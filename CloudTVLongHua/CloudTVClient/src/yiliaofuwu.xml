@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adver>
+	<item>
+		<image>assets_icon_31.png</image>
+		<title>我的费用</title>
+	<contenturl>1</contenturl>
+	</item>
+	<item>
+		<image>assets_icon_32.png</image>
+		<title>检验报告</title>
+		<contenturl>2</contenturl>
+	</item>
+	<item>
+		<image>assets_icon_33.png</image>
+		<title>检查报告</title>
+		<contenturl>3</contenturl>
+	</item>
+</adver>

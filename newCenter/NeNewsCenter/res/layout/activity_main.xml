@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainRootView"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layoutAnimation="@anim/layout_animation_in_right" >
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <!-- 左侧内容区 -->
+
+        <FrameLayout
+            android:id="@+id/frag_container"
+            android:layout_width="328dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="33dp" >
+        </FrameLayout>
+
+        <!-- 右侧导航区 -->
+
+        <FrameLayout
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/frag_container"
+            android:background="@drawable/main_right_bg" >
+
+            <RadioGroup
+                android:id="@+id/main_controller"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginTop="95dp"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/mainSys"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:button="@drawable/main_sys" />
+
+                <RadioButton
+                    android:id="@+id/mainApp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="35dp"
+                    android:button="@drawable/main_app" />
+
+                <RadioButton
+                    android:id="@+id/mainUser"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="25dp"
+                    android:button="@drawable/main_user" />
+
+                <RadioButton
+                    android:id="@+id/mainConfig"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="25dp"
+                    android:button="@drawable/main_config" />
+
+                <RadioButton
+                    android:id="@+id/mainUserCenter"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="25dp"
+                    android:button="@drawable/main_usercenter" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/main_sysNum"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="138dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/main_appNum"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="210dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/main_userNum"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="280dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <!-- 顶部区域 -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/main_top_bg" >
+
+            <Button
+                android:id="@+id/main_close_btn"
+                android:layout_width="14dp"
+                android:layout_height="13dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/main_close_btn" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>

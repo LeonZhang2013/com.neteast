@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 整个应用中底部每个tab的布局 -->
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	 android:orientation="horizontal"
+	android:layout_height="fill_parent">
+	<TextView
+		android:layout_width="fill_parent"
+		android:id="@+id/tabtext"
+		android:layout_height="fill_parent"
+		android:gravity="center"
+		android:textColor="@drawable/tabtextstyle"
+		style="@style/tabtext"
+		android:background="@drawable/tabselectstyle">
+	</TextView>
+	<TextView
+            android:id="@+id/download_count"
+            android:layout_width="30dp"
+            android:layout_height="31dp"
+            android:layout_gravity="right|center"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/count_bg"
+            android:visibility="gone"
+            android:gravity="center" >
+    </TextView>
+</RelativeLayout>

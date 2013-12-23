@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tgh="http://schemas.android.com/apk/res/com.neteast.androidclient.newscenter"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+            <View
+                android:layout_width="71dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:background="@drawable/usercenter_title" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/grey"
+            >
+			<TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textColor="@color/darkGreen"
+			    android:layout_marginLeft="24dp"
+			    android:text="用户个人信息"
+			    android:layout_gravity="left|center_vertical"/>
+            <CheckBox
+                android:id="@+id/usercenter_edit"
+                android:layout_width="42dp"
+                android:layout_height="22dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="15dp"
+                android:button="@drawable/usercenter_edit"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp" >
+
+            <FrameLayout
+                android:id="@+id/usercenter_photo_block"
+                android:layout_width="86.0dip"
+                android:layout_height="86.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/usercenter_photo_default" >
+
+                <ImageView
+                    android:id="@+id/usercenter_photo_pic"
+                    android:layout_width="78.0dip"
+                    android:layout_height="78.0dip"
+                    android:layout_gravity="center"
+                    android:enabled="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/usercenter_photo_edit"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/usercenter_photo_name"
+                    android:layout_width="86.0dip"
+                    android:layout_height="86.0dip"
+                    android:background="@drawable/usercenter_photo_default_mask"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="55.0sp"
+                    android:visibility="visible" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/usercenter_identityCard_block"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@id/usercenter_photo_block"
+                android:layout_toRightOf="@id/usercenter_photo_block"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:text="身份证"
+                    android:textColor="#222"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/usercenter_identityCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="18"
+                    android:singleLine="true"
+                    android:textColor="#595959"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/usercenter_account_block"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_above="@id/usercenter_identityCard_block"
+                android:layout_alignLeft="@id/usercenter_identityCard_block"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:text="帐号    "
+                    android:textColor="#222"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/usercenter_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:maxLength="18"
+                    android:singleLine="true"
+                    android:textColor="#595959"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/usercenter_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/usercenter_username_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/UserCenter.Label"
+                        android:layout_height="wrap_content"
+                        android:text="姓名" />
+
+                    <EditText
+                        android:id="@+id/usercenter_username"
+                        style="@style/UserCenter.Content"
+                        android:enabled="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/usercenter_fphone_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/UserCenter.Label"
+                        android:text="常用电话" />
+
+                    <EditText
+                        android:id="@+id/usercenter_fphone"
+                        style="@style/UserCenter.Content"
+                        android:enabled="false"
+                        android:inputType="phone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/usercenter_femail_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/UserCenter.Label"
+                        android:text="常用邮箱" />
+
+                    <EditText
+                        android:id="@+id/usercenter_femail"
+                        style="@style/UserCenter.Content"
+                        android:enabled="false"
+                        android:inputType="textEmailAddress" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/usercenter_org_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/UserCenter.Label"
+                        android:text="公司" />
+
+                    <EditText
+                        android:id="@+id/usercenter_org"
+                        style="@style/UserCenter.Content"
+                        android:enabled="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/usercenter_job_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/UserCenter.Label"
+                        android:text="职位" />
+
+                    <EditText
+                        android:id="@+id/usercenter_job"
+                        style="@style/UserCenter.Content"
+                        android:enabled="false" />
+                </LinearLayout>
+
+                <com.neteast.androidclient.newscenter.view.ContactCard
+                    android:id="@+id/usercenter_phones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tgh:contentHint="@string/hint_input_phone"
+                    tgh:contentInputType="TYPE_CLASS_PHONE"
+                    tgh:labels="@array/phone_types"
+                    tgh:mimeType="PHONE" />
+
+                <com.neteast.androidclient.newscenter.view.ContactCard
+                    android:id="@+id/usercenter_emails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tgh:contentHint="@string/hint_input_email"
+                    tgh:contentInputType="TYPE_TEXT_VARIATION_EMAIL_ADDRESS"
+                    tgh:labels="@array/email_types"
+                    tgh:mimeType="EMAIL" />
+
+                <com.neteast.androidclient.newscenter.view.ContactCard
+                    android:id="@+id/usercenter_ims"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tgh:contentHint="@string/hint_input_im"
+                    tgh:contentInputType="TYPE_CLASS_TEXT"
+                    tgh:labels="@array/im_types"
+                    tgh:mimeType="IM" />
+
+                <com.neteast.androidclient.newscenter.view.ContactCard
+                    android:id="@+id/usercenter_locations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tgh:contentHint="@string/hint_input_location"
+                    tgh:contentInputType="TYPE_CLASS_TEXT"
+                    tgh:labels="@array/location_types"
+                    tgh:mimeType="LOCATION" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/usercenter_addmore"
+            android:layout_width="222dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="63dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/usercenter_add_more"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/usercenter_authorize"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:background="@color/grey"
+            android:layout_marginTop="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="用户分享设置"
+                android:textColor="@color/darkGreen"
+                android:layout_marginLeft="26dp"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="12dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="21dp"
+                android:background="@drawable/usercenter_into" />
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/usercenter_logout"
+            android:layout_width="67dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/usercenter_logout"/>
+    </LinearLayout>
+
+</FrameLayout>

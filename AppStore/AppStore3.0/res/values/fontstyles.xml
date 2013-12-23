@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- tab字体样式 -->
+	<style name="tabtext">
+		<item name="android:textSize">25sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<!-- 应用图片右侧name样式 -->
+	<style name="appname">
+		<item name="android:textColor">#000000</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">20sp</item>
+	</style>
+	<style name="apptype">
+		<item name="android:textColor">#000000</item>
+		<item name="android:textSize">12sp</item>
+	</style>
+	<!-- 页码显示样式 -->
+	<style name="pageNum">
+		<item name="android:textColor">#000000</item>
+		<item name="android:textSize">25sp</item>
+	</style>
+	<!-- 最后一页页码显示样式 -->
+	<style name="secondpageNum">
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textSize">25sp</item>
+	</style>
+
+</resources>

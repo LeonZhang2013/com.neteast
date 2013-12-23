@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="1033dp"
+        android:layout_height="589dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_dialog">
+
+        <GridLayout
+            android:id="@+id/filterGrids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="54dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginRight="54dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/filterOk"
+            android:layout_width="93dp"
+            android:layout_height="39dp"
+            android:background="@drawable/ic_detail_btn"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="确定"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="45dp"
+            android:enabled="false"
+            />
+    </LinearLayout>
+
+
+</FrameLayout>

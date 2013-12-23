@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding= "utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:descendantFocusability= "blocksDescendants"
+    android:background="#000000" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="154dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/item_main"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:id="@+id/image_view"
+            android:layout_width="157dp"
+            android:layout_height="118dp"
+            android:scaleType="centerInside"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="118dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/video_name"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/play_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/play_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"/>
+
+            <TextView
+                android:id="@+id/ellipsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="... ..." />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:focusable= "false" 
+        android:id="@+id/desc_button"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:paddingLeft="15dp"
+        android:paddingTop="25dp"
+        android:layout_alignRight="@id/item_main"
+        android:layout_alignBottom="@id/item_main"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:onClick="showDescrip"
+        android:text="[详情]" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="hello">Hello World, AppStoreActivity!</string>
+    <string name="app_name">应用仓库</string>
+    <string name="first_tab">精彩推荐</string>
+    <string name="second_tab">最新上架</string>
+    <string name="third_tab">热点排行</string>
+    <string name="fourth_tab">应用分类</string>
+    <string name="fifith_tab">游戏分类</string>
+    <string name="sixth_tab">管理</string>
+    <string name="nodata"/>
+    <string name="system_tips">友情提示</string>
+    <string name="msg_network_nowifi">无可用的网络连接，请检查你的网络设置</string>
+    <string name="net_setup">网络设置</string>
+    <string name="exit">退出</string>
+    <string name="online_help">在线帮助</string>
+    <string name="online_feedback">在线反馈</string>
+    <string name="space_upgrade">空间升级</string>
+    <string name="clear_cache">清空缓存</string>
+    <string name="about">关于</string>
+    <string name="set">设置</string>
+    <string name="version_upgrade">更新版本</string>
+    <string name="online_help_notinstall">在线帮助未安装</string>
+    <string name="online_feedback_notinstall">在线反馈未安装</string>
+</resources>

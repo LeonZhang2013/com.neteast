@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 上方的视频信息栏 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_top_panel_height"
+        android:layout_gravity="right|center_vertical"
+        android:background="@drawable/bg_detail_top_panel" >
+
+        <!-- 视频封面 -->
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/detail_movie_image"
+            android:layout_width="233dp"
+            android:layout_height="318dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg_poster_default"
+            android:contentDescription="@string/content_description_image"
+            android:padding="3dp"
+            android:scaleType="fitXY" />
+        <!-- 视频标题 -->
+
+        <TextView
+            android:id="@+id/detail_movie_title"
+            style="@style/Detail.MovieTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="38dp"
+            android:layout_toRightOf="@id/detail_movie_image" />
+
+        <!-- 视频评分 -->
+
+        <TextView
+            android:id="@+id/detail_mark"
+            style="@style/Detail.MovieTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/detail_movie_title"
+            android:layout_marginRight="41dp" />
+
+        <!-- 视频信息 -->
+
+        <LinearLayout
+            android:id="@+id/detail_movie_info_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/detail_movie_title"
+            android:layout_below="@id/detail_movie_title"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/detail_movie_info1"
+                    style="@style/Detail.MovieInfoText" />
+
+                <TextView
+                    android:id="@+id/detail_movie_info2"
+                    style="@style/Detail.MovieInfoText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_movie_info_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/detail_movie_info3"
+                    style="@style/Detail.MovieInfoText" />
+
+                <TextView
+                    android:id="@+id/detail_movie_info4"
+                    style="@style/Detail.MovieInfoText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_movie_info_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/detail_movie_info5"
+                    style="@style/Detail.MovieInfoText" />
+
+                <TextView
+                    android:id="@+id/detail_movie_info6"
+                    style="@style/Detail.MovieInfoText" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 视频描述 -->
+
+        <TextView
+            android:id="@+id/detail_description"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignLeft="@id/detail_movie_title"
+            android:layout_below="@+id/detail_movie_info_block"
+            android:layout_marginRight="41dp"
+            android:layout_marginTop="24dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="15dp"
+            android:lines="2"
+            android:maxLength="88"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/detail_info_text_size" />
+        <!-- 详情按钮，点击显示完整的视频描述 -->
+
+        <Button
+            android:id="@+id/detail_more_description"
+            style="@style/Detail.ButtonText"
+            android:layout_width="72dp"
+            android:layout_height="31dp"
+            android:layout_alignRight="@id/detail_description"
+            android:layout_alignTop="@id/detail_description"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="39dp"
+            android:background="@drawable/ic_detail_btn"
+            android:drawableRight="@drawable/ic_down_arrow"
+            android:text="详情"
+            android:visibility="invisible" />
+        <!-- 功能按钮 -->
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/detail_movie_title"
+            android:layout_below="@id/detail_description"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/functionlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/detail_movie_title"
+                android:layout_below="@id/detail_description"
+                android:layout_marginTop="31dp"
+                android:orientation="horizontal" >
+                <!-- 电影显示"播 放"按钮，综艺/电视剧显示最新期数，点击播放 -->
+
+                <Button
+                    android:id="@+id/detail_play"
+                    style="@style/Detail.ButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_btn_texture"
+                    android:drawableLeft="@drawable/ic_play_flag"
+                    android:visibility="gone" >
+
+                    <requestFocus />
+                </Button>
+                <!-- 点击展示分集页面 -->
+
+                <Button
+                    android:id="@+id/detail_choice_series"
+                    style="@style/Detail.ButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:background="@drawable/bg_btn_texture"
+                    android:text="选 集"
+                    android:visibility="gone" />
+                <!-- 点击展示来源选择界面 -->
+
+                <Button
+                    android:id="@+id/detail_choice_origin"
+                    style="@style/Detail.ButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:background="@drawable/bg_btn_texture"
+                    android:drawableRight="@drawable/ic_down_arrow"
+                    android:visibility="gone" />
+                <!-- 电视剧和综艺显示追剧，电影显示收藏，点击收藏本剧 -->
+
+                <Button
+                    android:id="@+id/detail_collection"
+                    style="@style/Detail.ButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:background="@drawable/bg_btn_texture"
+                    android:visibility="gone" />
+                <!-- 点击展示分享界面 -->
+
+                <Button
+                    android:id="@+id/detail_share"
+                    style="@style/Detail.ButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:background="@drawable/bg_btn_texture"
+                    android:text="分 享"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <!-- 下方的推荐视频信息 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_detail_bottom_panel" >
+
+        <TextView
+            android:id="@+id/detail_recommend_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="16dp"
+            android:text="相关推荐:"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/detail_recommend_title_text_size"
+            android:visibility="invisible" />
+        <!-- 五个推荐来源 -->
+
+        <LinearLayout
+            android:id="@+id/detail_recommend_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="66dp"
+            android:orientation="horizontal" />
+    </FrameLayout>
+
+</LinearLayout>

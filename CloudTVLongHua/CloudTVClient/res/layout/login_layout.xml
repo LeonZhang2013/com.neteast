@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding= "utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/loginbg" >
+
+    <RelativeLayout
+        android:id="@+id/login_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom"
+        android:paddingTop="120dp" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/user_name_ed"
+                    android:layout_width="312dp"
+                    android:layout_height="37dp"
+                    android:background="@drawable/loginedit"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="aaaaa"
+                    android:textSize="25dp" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/password_ed"
+                    android:layout_width="312dp"
+                    android:layout_height="37dp"
+                    android:background="@drawable/loginedit"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text=""
+                    android:password="true"
+                    android:textSize="25dp" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/radio_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_bg"
+        android:paddingLeft="130dp">
+
+        <CheckBox
+            android:id="@+id/radio_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动登录"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:paddingLeft="130dp"
+        android:layout_below="@id/radio_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/login_ok_btn"
+            android:layout_width="98dp"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/loginok" />
+
+        <Button
+            android:id="@+id/login_cancel_btn"
+            android:layout_width="98dp"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/logincacel" />
+    </LinearLayout>
+
+</RelativeLayout>

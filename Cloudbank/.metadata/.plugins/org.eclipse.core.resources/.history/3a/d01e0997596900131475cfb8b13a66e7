@@ -1,0 +1,20 @@
+package com.example.testlive;
+public class AlarmReceiver extends BroadcastReceiver {
+
+    
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        Bundle args = intent.getExtras();
+        if (args!=null) {
+            String action = args.getString("action");
+            if (ConfigManager.ACTION_WIDGET_SERVICE.equals(action)) {
+                Intent service=new Intent(context, WidgetService.class);
+                context.startService(service);
+            }else if (ConfigManager.ACTION_RECEIVE_INFO_SERVICE.equals(action)) {
+                Intent service=new Intent(context, ReceiveInfoService.class);
+                context.startService(service);
+            }
+        }
+    }
+
+}

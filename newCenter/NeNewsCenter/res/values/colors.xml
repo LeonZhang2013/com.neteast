@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="pop_usercenter_label_pressed">#71ca42</drawable>
+    <drawable name="pop_usercenter_label_normal">#f4f6f5</drawable>
+    <color name="darkGreen">#3e5536</color>
+    <color name="grey">#d7d8d8</color>
+</resources>

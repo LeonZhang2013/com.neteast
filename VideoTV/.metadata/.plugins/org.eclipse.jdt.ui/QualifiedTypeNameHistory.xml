@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.neteast.videotv.ui.MainActivity"/>
+<fullyQualifiedTypeName name="com.neteast.videotv.ui.MainActivity.MyOnTouchEvent"/>
+<fullyQualifiedTypeName name="android.widget.GridLayout"/>
+<fullyQualifiedTypeName name="android.widget.Switch"/>
+<fullyQualifiedTypeName name="com.neteast.videotv.utils.MyLog"/>
+</qualifiedTypeNameHistroy>

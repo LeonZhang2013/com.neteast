@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_poster_frame"
+        android:duplicateParentState="true"
+        >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/image"
+            android:layout_width="140dp"
+            android:layout_height="188dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/bg_poster_default"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/countInfo"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:background="@drawable/bg_poster_default"
+            android:layout_alignLeft="@id/image"
+            android:layout_alignRight="@id/image"
+            android:layout_alignBottom="@id/image"
+            android:gravity="center"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:ellipsize="end"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="1044dp"
+        android:layout_height="658dp"
+        android:background="@drawable/bg_dialog"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="23dp" >
+
+            <LinearLayout
+                android:id="@+id/month_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/month_left_panel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/month_right_panel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+
+                <include layout="@layout/item_choice_icon_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

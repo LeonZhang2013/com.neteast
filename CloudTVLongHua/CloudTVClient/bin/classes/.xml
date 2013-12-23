@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adver>
+    <item>
+        <image>cation_movie.png</image>
+        <title>健康宣传</title>
+        <contenturl>dongzp.xml</contenturl>
+    </item>  
+     <item>
+        <image>044.png</image>
+        <title>医院介绍</title>
+        <contenturl>lovep.xml</contenturl>
+    </item> 
+     <item>
+        <image>055.png</image>
+        <title>特色专科</title>
+        <contenturl>donghp.xml</contenturl>
+    </item>
+     <item>
+        <image>055.png</image>
+        <title>专家简介</title>
+        <contenturl>donghp.xml</contenturl>
+    </item>
+     <item>
+        <image>055.png</image>
+        <title>收费标准</title>
+        <contenturl>donghp.xml</contenturl>
+    </item>
+</adver>
+

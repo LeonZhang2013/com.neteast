@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 每个页面中未选中标签的字体格式 -->
+	<style name="tabtextstyle">
+		<item name="android:textColor">#624021</item>
+		<item name="android:textSize">25sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<!-- 每个页面中选中标签的字体格式 -->
+	<style name="tabtextselectstyle">
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textSize">25sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<!-- 资讯详细信息新闻标题字体格式 -->
+	<style name="detailnewstitlestyle">
+		<item name="android:textColor">#443733</item>
+		<item name="android:textSize">24sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	
+	<!-- 资讯中第一条新闻标题字体格式 -->
+	<style name="newstitlestyle">
+		<item name="android:textColor">#17526b</item>
+		<item name="android:textSize">24sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<!-- 资讯中第一条新闻来源字体格式 -->
+	<style name="newssourcestyle">
+		<item name="android:textColor">#6b6c6c</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+	<!-- 资讯中第一条新闻内容字体格式 -->
+	<style name="newscontentstyle">
+		<item name="android:textColor">#333333</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+	<!-- 资讯中下方新闻标题字体格式 -->
+	<style name="newstitlestyle1">
+		<item name="android:textColor">#17526b</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<!-- 资讯中中间新闻来源字体格式 -->
+	<style name="newssourcestyle1">
+		<item name="android:textColor">#5d5d5d</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+	<!-- 资讯中今日关注标题字体格式 -->
+	<style name="newstodaytitlestyle">
+		<item name="android:textColor">#512d07</item>
+		<item name="android:textSize">22sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<!-- 资讯中今日关注内容字体格式 -->
+	<style name="newstodaycontentstyle">
+		<item name="android:textColor">#252525</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+	
+	<!-- 资讯中图片文字字体格式 -->
+	<style name="newsimagecontentstyle">
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+	<!-- 评分数字字体 -->
+	<style name="gradenumstyle">
+		<item name="android:textColor">#116600</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<!-- 搜索结果字体样式 -->
+	<style name="searchresultstyle">
+		<item name="android:textColor">#0D98D8</item>
+		<item name="android:textSize">30sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<!-- 设置中容量字体-->
+	<style name="settingcapacitystyle">
+		<item name="android:textColor">#0a0a09</item>
+		<item name="android:textSize">19sp</item>
+	</style>
+	<!-- 设置中其他字体-->
+	<style name="settingotherstyle">
+		<item name="android:textColor">#432620</item>
+		<item name="android:textSize">24sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<!-- 会员升级字体-->
+	<style name="upgradetextstyle">
+		<item name="android:textColor">#5D312D</item>
+		<item name="android:textSize">30sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<!-- 重命名字体-->
+	<style name="renametextstyle">
+		<item name="android:textColor">#5D312D</item>
+		<item name="android:textSize">26sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+		<!-- 没有外设存储提示字体样式 -->
+	<style name="noExternalStoragestyle">
+		<item name="android:textColor">#624021</item>
+		<item name="android:textSize">35sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<!-- 详细信息标题字体样式 -->
+	<style name="MovieDetailTitlestyle">
+		<item name="android:textColor">#414042</item>
+		<item name="android:textSize">26sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<!-- 影片信息字体样式 -->
+	<style name="MovieDetailInfostyle">
+		<item name="android:textColor">#443733</item>
+		<item name="android:textSize">18sp</item>
+
+	</style>
+	<!-- 详细信息字体样式 -->
+	<style name="MovieDetailContentstyle">
+		<item name="android:textColor">#443733</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+	<!-- 详细信息影片分享字体样式 -->
+	<style name="MovieDetailSharestyle">
+		<item name="android:textColor">#23619e</item>
+		<item name="android:textSize">24sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<!-- 详细信息剧情简介字体样式 -->
+	<style name="MovieDetailPlotstyle">
+		<item name="android:textColor">#414042</item>
+		<item name="android:textSize">23sp</item>
+	</style>
+	<!-- 精彩推荐图集中图片数量字体样式-->
+	<style name="imagesnumstyle">
+		<item name="android:textColor">#365073</item>
+		<item name="android:textSize">18sp</item>
+	</style>
+	<!-- 页码字体样式-->
+	<style name="pageinfostyle">
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:textSize">18dp</item>
+	</style>
+		<!-- 上旬、中旬、下旬字体样式-->
+	<style name="monthstyle">
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:textSize">18dp</item>
+	</style>
+</resources>

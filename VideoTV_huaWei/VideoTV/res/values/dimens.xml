@@ -1,0 +1,108 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <skip/>
+    <dimen name="homepage_title_size">36sp</dimen>
+    <dimen name="homepage_movie_title_size">36sp</dimen>
+    <dimen name="homepage_movie_content_size">20sp</dimen>
+    <dimen name="homepage_scroll_image_height">420dp</dimen>
+    <dimen name="homepage_scroll_image_width">1020dp</dimen>
+
+    <skip/>
+
+    <!--左侧主导航条的宽度-->
+    <dimen name="nav_tab_bar_width">120dip</dimen>
+    <!--左侧主导航条 每个Tab的高度-->
+    <dimen name="nav_tab_height">110dip</dimen>
+    <!--左侧主导航条 每个Tab文字的大小-->
+    <dimen name="nav_tab_text_size">20sp</dimen>
+    <!--左侧主导航条 二级列表的宽度-->
+    <dimen name="nav_sublist_width">180dp</dimen>
+    <!--左侧主导航条 二级列表单个条目的高度-->
+    <dimen name="nav_sublist_item_height">55dp</dimen>
+    <!--左侧主导航条 二级列表单个条目之间的间隔-->
+    <dimen name="nav_sublist_item_margin">8dp</dimen>
+
+    <dimen name="topic_margin_left">16dp</dimen>
+    <dimen name="topic_margin_right">22dp</dimen>
+    <dimen name="topic_margin_top">22dp</dimen>
+    <dimen name="topic_margin_bottom">30dp</dimen>
+
+    <dimen name="topic_content_verticalSpacing">4dp</dimen>
+    <dimen name="topic_content_horizontalSpacing">8dp</dimen>
+
+    <dimen name="topic_count_info_size">18sp</dimen>
+    <dimen name="topic_title_size">18sp</dimen>
+    <dimen name="topic_page_info_size">24sp</dimen>
+
+    <!--详情页-->
+    <!--播放按钮上播放图标距左边的距离 -->
+    <dimen name="detail_button_left_padding">10dp</dimen>
+    <!--播放按钮上播放图标距文字的距离-->
+    <dimen name="detail_button_drawable_padding">4dp</dimen>
+    <!--上部分视频信息栏高度-->
+    <dimen name="detail_top_panel_height">383dp</dimen>
+    <!--视频封面距左距离-->
+    <dimen name="detail_movie_image_margin_left">28dp</dimen>
+    <!--视频封面距上距离-->
+    <dimen name="detail_movie_image_margin_top">21dp</dimen>
+    <!--视频封面宽-->
+    <dimen name="detail_image_width">160dp</dimen>
+    <!--视频封面高-->
+    <dimen name="detail_image_height">214dp</dimen>
+
+    <dimen name="image_width">180dp</dimen>
+    <dimen name="image_height">240dp</dimen>
+
+    <!--视频信息条目每条之间的间隔-->
+    <dimen name="detail_movie_info_margin_top">9dp</dimen>
+    <dimen name="detail_recommend_margin_bottom">14dp</dimen>
+
+
+    <!--视频标题文字大小-->
+    <dimen name="detail_title_text_size">26sp</dimen>
+    <!--视频信息文字大小-->
+    <dimen name="detail_info_text_size">20sp</dimen>
+    <!--按钮文字大小-->
+    <dimen name="detail_button_text_size">20sp</dimen>
+    <!--相关推荐 标题文字大小-->
+    <dimen name="detail_recommend_title_text_size">24sp</dimen>
+    <!--相关推荐 视频信息文字大小-->
+    <dimen name="detail_recommend_info_text_size">18sp</dimen>
+
+    <dimen name="choice_count_text_size">20sp</dimen>
+    <dimen name="choice_count_text_margin_left">14dp</dimen>
+
+    <dimen name="choice_origin_margin_top">11dp</dimen>
+    <dimen name="choice_origin_margin_bottom">62dp</dimen>
+
+
+    <dimen name="poster_block_margin_bottom">20dp</dimen>
+    <dimen name="poster_width">180dp</dimen>
+    <dimen name="poster_height">240dp</dimen>
+    <dimen name="poster_margin">3dp</dimen>
+    <dimen name="poster_count_text_size">18sp</dimen>
+    <dimen name="poster_count_text_height">29dp</dimen>
+    <dimen name="poster_title_text_size">18sp</dimen>
+    <dimen name="poster_between_right">3dp</dimen>
+
+    <dimen name="home_page_pic_level1_w">510dp</dimen>
+    <dimen name="home_page_pic_level1_h">270dp</dimen>
+
+    <dimen name="home_page_pic_level2_w">320dp</dimen>
+    <dimen name="home_page_pic_level2_h">175dp</dimen>
+
+    <dimen name="home_page_pic_level3_w">200dp</dimen>
+    <dimen name="home_page_pic_level3_h">270dp</dimen>
+
+    <dimen name="home_page_pic_level4_w">200dp</dimen>
+    <dimen name="home_page_pic_level4_h">175dp</dimen>
+
+    <dimen name="home_page_pic_margin">15dp</dimen>
+    <dimen name="home_page_pic_text_size">24sp</dimen>
+    <dimen name="home_page_pic_text_margin">10dp</dimen>
+
+</resources>

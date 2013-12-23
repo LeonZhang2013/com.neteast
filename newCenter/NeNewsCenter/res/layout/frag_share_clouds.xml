@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#dedddd" >
+
+    <LinearLayout
+        android:layout_width="210dp"
+        android:layout_height="500dp"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="@drawable/authorize_dialog_title" />
+
+        <EditText
+            android:id="@+id/share_search"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="6dp"
+            android:drawableLeft="@android:drawable/ic_search_category_default"
+            android:drawablePadding="10dp"
+            android:hint="查找好友"
+            android:scrollHorizontally="true"
+            android:scrollbars="none"
+            android:singleLine="true"
+            android:textColorHint="#b9baba" 
+            android:enabled="false"/>
+
+        <LinearLayout
+            android:id="@+id/share_list_block"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@+id/share_search_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:listSelector="@android:color/transparent"
+                android:visibility="gone" >
+            </ListView>
+
+            <ExpandableListView
+                android:id="@+id/share_clouds"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:groupIndicator="@drawable/transparent"
+                android:divider="@drawable/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:listSelector="@android:color/transparent" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/share_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" >
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Large.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true" />
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

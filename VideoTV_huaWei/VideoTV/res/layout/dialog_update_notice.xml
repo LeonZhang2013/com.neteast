@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_confirm_frame"
+    android:padding="2dp" >
+
+    <LinearLayout
+        android:layout_width="639dp"
+        android:layout_height="wrap_content"
+        android:background="#101c2c"
+        android:minHeight="212dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/bg_dialog_confirm_top"
+            android:text="版本升级"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="27dp"
+            android:text="您确定要退出视频天下？"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/confirmOK"
+                android:layout_width="130dp"
+                android:layout_height="42dp"
+                android:layout_marginRight="136dp"
+                android:background="@drawable/bg_btn_texture"
+                android:text="确定"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/confirmCancel"
+                android:layout_width="130dp"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_btn_texture"
+                android:text="取消"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

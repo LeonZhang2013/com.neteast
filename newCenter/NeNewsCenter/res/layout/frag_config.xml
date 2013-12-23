@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 顶部的标志栏 -->
+		<FrameLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="5dp">
+		    <View
+            android:id="@+id/top_pannel"
+            android:layout_width="71dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:background="@drawable/config_title" />
+		</FrameLayout>
+        
+        <!-- 清空消息自动关闭 -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center_vertical|center_horizontal" 
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="90dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="清空消息时自动关闭"
+                android:textColor="@color/darkGreen" />
+
+            <CheckBox
+                android:id="@+id/config_auto_close"
+                android:layout_width="37dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right|center_vertical"
+                android:button="@drawable/config_set" />
+        </FrameLayout>
+        <!-- 广播消息关闭自动提醒 -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="90dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="提示广播消息"
+                android:textColor="@color/darkGreen"/>
+
+            <CheckBox
+                android:id="@+id/config_broadcast_notify"
+                android:layout_width="37dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right|center_vertical"
+                android:button="@drawable/config_set" />
+        </FrameLayout>
+        <!-- 删除消息确认 -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center_vertical|center_horizontal" 
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="90dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="删除消息确认提醒"
+                android:textColor="@color/darkGreen" />
+
+            <CheckBox
+                android:id="@+id/config_delete_confirm"
+                android:layout_width="37dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right|center_vertical"
+                android:button="@drawable/config_set" />
+        </FrameLayout>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+        
+        <TextView 
+            android:id="@+id/config_versioninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/darkGreen"/>
+        
+    </LinearLayout>
+
+</FrameLayout>

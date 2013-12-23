@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.hs.activity"
+	android:versionCode="16777472"
+	android:versionName="1.0.1.0" >
+	<uses-sdk android:minSdkVersion="10" />
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.GET_TASKS"/>
+	
+	<application
+		android:name=".DownLoadApplication"
+		android:icon="@drawable/logoico"
+		android:label="@string/app_name"
+		android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+		<activity
+			android:name=".AppStoreActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="landscape" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<intent-filter>
+			    <action android:name="com.neteast.appstore.activity.share" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".FirstActivity" />
+		<activity android:name=".SecondFragmentActivity" />
+		<activity android:name=".ThirdActivity" />
+		<activity android:name=".FourthAndFifthActivity" />
+		<activity android:name=".SixthActivity" />
+		<activity android:name=".SixthFragmentActivity" />
+		<activity android:name=".PopWindowActivity" > <!-- android:theme="@style/myDialogTheme" -->
+		</activity>
+		<receiver
+			android:name="com.hs.receiver.InstallReceiver"
+			android:enabled="true" >
+			<intent-filter>
+				<action android:name="android.intent.action.PACKAGE_ADDED" >
+				</action>
+				<action android:name="android.intent.action.PACKAGE_REPLACED" >
+				</action>
+				<data android:scheme="package" />
+			</intent-filter>
+ 		</receiver> 
+ 		<receiver
+			android:name="com.hs.receiver.UninstallReceiver"
+			android:enabled="true" >
+			<intent-filter>
+				<action android:name="android.intent.action.PACKAGE_REMOVED" >
+				</action>
+				<data android:scheme="package" />
+			</intent-filter>
+		</receiver> 
+		<receiver
+			android:name="com.hs.receiver.LoginReceiver"
+			android:enabled="true" >
+			<intent-filter>
+				<action android:name="com.neteast.newscenter.login.success" >
+				</action>
+			</intent-filter>
+		</receiver>
+	</application>
+</manifest>

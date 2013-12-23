@@ -1,0 +1,5 @@
+<factorypath>
+    <factorypathentry kind="WKSPJAR" id="/VideoTV/libs/androidannotations-2.7.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="WKSPJAR" id="/VideoTV/libs/codemodel-2.4.1.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="WKSPJAR" id="/VideoTV/libs/androidannotations-api-2.7.jar" enabled="true" runInBatchMode="false"/>
+</factorypath>

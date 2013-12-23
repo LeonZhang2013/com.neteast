@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/check_report"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="91dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="104dp"
+            android:background="@drawable/table_title" >
+
+            <TextView
+                android:id="@+id/charging_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="检查日期:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/calendar_item_text"
+                android:layout_width="180dp"
+                android:layout_height="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@id/charging_one"
+                android:background="@drawable/dark_blue_empty_rect"
+                android:gravity="center_vertical"
+                android:paddingLeft="7dp"
+                android:paddingRight="2dp"
+                android:drawableRight="@drawable/charging_item_btn"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+             <Button
+                android:id="@+id/calendar_item_btn2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="12dp"
+                android:layout_toRightOf="@id/calendar_item_text"
+                android:background="@drawable/calendar"
+                android:onClick="onSelectCalender" /> 
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/patient_desc"
+            android:layout_width="1200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <TextView
+            style="@style/TableStyle_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="30dp"
+            android:text="影像学表现：" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:background="@drawable/dotted_line"
+            />
+
+        <TextView
+            android:id="@+id/content_desc1"
+            style="@style/TableStyle_1"
+            android:layout_width="1020dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            style="@style/TableStyle_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="30dp"
+            android:text="影像学诊断：" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:background="@drawable/dotted_line"/>
+
+        <TextView
+            android:id="@+id/content_desc2"
+            style="@style/TableStyle_1"
+            android:layout_width="1020dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+
+    <include layout="@layout/title_logo_layout" />
+    
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/exhibit_progress" />
+</RelativeLayout>

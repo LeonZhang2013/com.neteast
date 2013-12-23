@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/friendbg"
+	android:orientation="vertical" >
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="2"
+		android:gravity="center_horizontal|center_vertical" >
+		<TextView
+			style="@style/upgradetextstyle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:text="推荐给朋友" />
+	</TableRow>
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1.3"
+		android:gravity="center_horizontal|center_vertical" >
+		<ImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/setting_btn_email"
+			android:background="#00000000"
+			 />
+	</TableRow>
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1.3"
+		android:gravity="center_horizontal|center_vertical" >
+		<ImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/setting_btn_smessage"
+			android:background="#00000000" />
+	</TableRow>
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1.3"
+		android:gravity="center_horizontal|center_vertical" >
+		<ImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/setting_btn_cancel"
+			android:background="#00000000"
+			android:onClick="cancelOnclick" />
+	</TableRow>
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1.5" >
+	</TableRow>
+</TableLayout>

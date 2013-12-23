@@ -1,0 +1,339 @@
+package com.neteast.androidclient.newscenter.view;
+
+import com.neteast.androidclient.newscenter.ConfigManager;
+import com.neteast.androidclient.newscenter.R;
+import com.neteast.androidclient.newscenter.activity.MainActivity;
+import com.neteast.androidclient.newscenter.utils.Utils;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.content.res.Configuration;
+import android.graphics.Color;
+import android.graphics.PixelFormat;
+import android.view.Gravity;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.FrameLayout;
+import android.widget.TextView;
+
+import java.util.Observable;
+import java.util.Observer;
+
+public final class NewsWidget extends FrameLayout implements Observer{
+    private WindowManager mWindowManager;
+    private TextView mNewstView;
+    
+    private static NewsWidget sInstance;
+    private WindowManager.LayoutParams mWindowParams;
+    private NewsWidgetObserver mObserver;
+    /**
+     * 得到控件</BR>
+     * 采用的是单例模式，系统中只会有一个控件实例
+     * @param context
+     * @return
+     */
+    public synchronized static NewsWidget getIntance(Context context) {
+        if (sInstance==null) {
+            Context mContext=context;
+            if (context instanceof Activity) {
+                Activity activity=(Activity) context;
+                mContext=activity.getApplicationContext();
+            }
+            sInstance=new NewsWidget(mContext);
+        }
+        return sInstance;
+    }
+    
+    private NewsWidget(Context context) {
+        super(context);
+        //得到未读消息数目的观察者
+        mObserver=new NewsWidgetObserver();
+        mObserver.addObserver(this);
+        //初始化控件的内容
+        initViewContent();
+    }
+    
+    /**
+     * 将控件加载到屏幕的指定位置上
+     * @param context
+     */
+    public void addOnScreen() {
+        mWindowManager = (WindowManager) getContext().getSystemService(Context.WINDOW_SERVICE);
+        
+        mWindowParams = new WindowManager.LayoutParams();
+        mWindowParams.type = WindowManager.LayoutParams.TYPE_PHONE;
+        mWindowParams.flags = WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
+                | WindowManager.LayoutParams.FLAG_TOUCHABLE_WHEN_WAKING;
+        mWindowParams.width = getResources().getDimensionPixelSize(R.dimen.news_widget_width);
+        mWindowParams.height =getResources().getDimensionPixelSize(R.dimen.news_widget_height);
+        
+        mWindowParams.format = PixelFormat.TRANSPARENT;
+        mWindowParams.gravity=Gravity.TOP|Gravity.LEFT;
+        mWindowParams.y = getResources().getDimensionPixelSize(R.dimen.news_widget_marginTop);
+        mWindowManager.addView(this, mWindowParams);
+    }
+    
+    /**
+     * 本方法初始化控件的内容
+     * @param context
+     * @param resources
+     */
+    private void initViewContent() {
+        setBackgroundResource(R.drawable.news_widget_bg);
+        mNewstView = new TextView(getContext());
+        mNewstView.setTextColor(Color.WHITE);
+        mNewstView.setBackgroundResource(R.drawable.news_widget_num);
+        mNewstView.setGravity(Gravity.CENTER);
+        refreshNewsView();
+        FrameLayout.LayoutParams textParams=new FrameLayout.LayoutParams(
+                getResources().getDimensionPixelSize(R.dimen.news_cloud_width), 
+                getResources().getDimensionPixelSize(R.dimen.news_cloud_height));
+        textParams.leftMargin=Utils.dp2px(getContext(), 5);
+        textParams.bottomMargin=Utils.dp2px(getContext(), 12);
+        textParams.gravity=Gravity.CENTER;
+        addView(mNewstView, textParams);
+        requestFocus();
+    }
+    
+    /**
+     * 刷新控件的位置
+     */
+    private void refreshGravity() {
+        mWindowParams.gravity=Gravity.TOP|Gravity.LEFT;
+        mWindowParams.y = getResources().getDimensionPixelSize(R.dimen.news_widget_marginTop);
+        mWindowManager.updateViewLayout(this, mWindowParams);
+    }
+    
+    @Override
+    protected void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        refreshGravity();
+    }
+    
+    /**
+     * 显示控件
+     */
+    public void show() {
+        setVisibility(View.VISIBLE);
+    }
+    
+    /**
+     * 隐藏控件
+     */
+    public void hidden() {
+        setVisibility(View.GONE);
+    }
+    
+    
+    public void registerNewsWidgetObserver(Observer observer) {
+        mObserver.addObserver(observer);
+    }
+    
+    public void unRegisterNewsWidgetObserver(Observer observer) {
+        mObserver.deleteObserver(observer);
+    }
+    
+    public void addSysNumsNum() {
+        mObserver.addSysNumsNum();
+    }
+    
+    public void addAppNumsNum() {
+        mObserver.addAppNumsNum();
+    }
+    
+    public void addUserNumsNum() {
+        mObserver.addUserNumsNum();
+    }
+    /**
+     * 将系统未读消息数目清零
+     */
+    public void clearSysNumsNum() {
+        mObserver.clearSysNumsNum();
+    }
+
+    /**
+     * 将应用未读消息数目清零
+     */
+    public void clearAppNumsNum() {
+        mObserver.clearAppNumsNum();
+    }
+
+    /**
+     * 将互动未读消息数目清零
+     */
+    public void clearUserNumsNum() {
+        mObserver.clearUserNumsNum();
+    }
+
+    /**
+     * 得到未读的系统消息数目
+     * 
+     * @return
+     */
+    public int getSysNewsNum() {
+        return mObserver.getSysNewsNum();
+    }
+
+    /**
+     * 得到未读的应用消息数目
+     * 
+     * @return
+     */
+    public int getAppNewsNum() {
+        return mObserver.getAppNewsNum();
+    }
+
+    /**
+     * 得到未读的互动消息数目
+     * 
+     * @return
+     */
+    public int getUserNewsNum() {
+        return mObserver.getUserNewsNum();
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        if (event.getAction()==MotionEvent.ACTION_UP) {
+            //当手指弹起时，启动主应用
+            launchMainApplication();
+            //将系统未读的消息清零
+            mObserver.clearSysNumsNum();
+            return true;
+        }
+        return super.onTouchEvent(event);
+    }
+
+    /**
+     * 将控件从屏幕移除
+     */
+    public void deleteFromScreen() {
+        mObserver.deleteObserver(this);
+        mWindowManager.removeView(this);
+    }
+
+    @Override
+    public void update(Observable observable, Object data) {
+        refreshNewsView();
+    }
+    /**
+     * 启动主应用
+     */
+    private void launchMainApplication() {
+        Intent intent = new Intent(getContext(), MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        getContext().startActivity(intent);        
+    }
+
+    /**
+     * 刷新消息数目
+     */
+    private void refreshNewsView() {
+        int totalNum = calculateTotalNewsNum();
+        if (totalNum>0) {
+            mNewstView.setVisibility(View.VISIBLE);
+            mNewstView.setText(String.valueOf(totalNum));
+        }else {
+            mNewstView.setVisibility(View.GONE);
+        }
+    }
+    
+    /**
+     * 计算未读消息总数目
+     */
+    private int calculateTotalNewsNum() {
+        boolean notifyBroadcast = ConfigManager.isNotifyBroadcast(getContext());
+        int totalNum=mObserver.getAppNewsNum()+mObserver.getUserNewsNum();
+        if (notifyBroadcast) {
+            totalNum+=mObserver.getSysNewsNum();
+        }
+        return 5;
+    }
+    
+    private class NewsWidgetObserver extends Observable {
+        private int mSysNewsNum, mAppNewsNum, mUserNewsNum;
+
+        private NewsWidgetObserver() {
+        }
+
+        private void addSysNumsNum() {
+            mSysNewsNum++;
+            setChanged();
+            notifyObservers();
+        }
+        private void addAppNumsNum() {
+            mAppNewsNum++;
+            setChanged();
+            notifyObservers();
+        }
+
+        private void addUserNumsNum() {
+            mUserNewsNum++;
+            setChanged();
+            notifyObservers();
+        }
+
+        /**
+         * 将系统未读消息数目清零
+         */
+        private void clearSysNumsNum() {
+            if (mSysNewsNum!=0) {
+                mSysNewsNum = 0;
+                setChanged();
+            }
+            notifyObservers();
+        }
+
+        /**
+         * 将应用未读消息数目清零
+         */
+        private void clearAppNumsNum() {
+            if (mAppNewsNum!=0) {
+                mAppNewsNum = 0;
+                setChanged();
+            }
+            notifyObservers();
+        }
+
+        /**
+         * 将互动未读消息数目清零
+         */
+        private void clearUserNumsNum() {
+            if (mUserNewsNum!=0) {
+                mUserNewsNum = 0;
+                setChanged();
+            }
+            notifyObservers();
+        }
+
+        /**
+         * 得到未读的系统消息数目
+         * 
+         * @return
+         */
+        private int getSysNewsNum() {
+            return mSysNewsNum;
+        }
+
+        /**
+         * 得到未读的应用消息数目
+         * 
+         * @return
+         */
+        private int getAppNewsNum() {
+            return mAppNewsNum;
+        }
+
+        /**
+         * 得到未读的互动消息数目
+         * 
+         * @return
+         */
+        private int getUserNewsNum() {
+            return mUserNewsNum;
+        }
+
+    }
+}

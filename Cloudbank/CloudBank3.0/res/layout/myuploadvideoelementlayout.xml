@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recommendvideoelementlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.neteast.clouddisk.customerview.ItemViewGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <FrameLayout
+	        android:id="@+id/fileitemView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10dp"
+	        android:layout_marginTop="15dp"
+	        android:background="@drawable/myupvideobg"
+	        android:orientation="vertical" >
+	        <LinearLayout
+	            android:layout_width="156dp"
+	            android:layout_height="157dp"
+	            android:gravity="center_vertical"
+	            android:layout_gravity="center"
+	            android:orientation="vertical" >
+	            <ImageView
+	                android:id="@+id/imageView"
+	                android:layout_width="150dp"
+	                android:layout_height="150dp"
+	                android:layout_gravity="center" 
+	                android:src="@drawable/videodefaultico"
+	                android:scaleType="fitXY"/>
+	 
+	        </LinearLayout>
+	        <LinearLayout
+	            android:id="@+id/encrypt"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="bottom|center"
+	            android:visibility="gone"
+	            android:layout_marginBottom="10dp"
+	            android:orientation="vertical" >
+	            <ImageView
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/encrypt_ico" />
+	        </LinearLayout>
+		</FrameLayout>
+	    <FrameLayout
+	        android:id="@+id/folderitemView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginTop="10dp"
+	        android:orientation="vertical"
+	        android:visibility="gone" >
+	        <LinearLayout
+	            android:layout_width="156dp"
+	            android:layout_height="157dp"
+	            android:gravity="center_vertical"
+	            android:layout_gravity="center"
+	            android:orientation="vertical" >
+	            <ImageView
+	                android:id="@+id/imageView1"
+	                android:layout_width="150dp"
+	                android:layout_height="150dp"
+	                android:layout_gravity="center" 
+	                android:src="@drawable/videodefaultico"
+	                android:scaleType="fitXY"/>
+	 
+	        </LinearLayout>
+	        <ImageView
+	        	android:id="@+id/folderView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:background="@drawable/ico_video"/>
+	
+	        <LinearLayout
+	            android:id="@+id/folderencrypt"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="bottom|center"
+	            android:visibility="gone"
+	            android:layout_marginBottom="10dp"
+	            android:orientation="vertical" >
+	            <ImageView
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/encrypt_ico" />
+	        </LinearLayout>
+		</FrameLayout>
+    </com.neteast.clouddisk.customerview.ItemViewGroup>
+        
+	<LinearLayout
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp">
+        <TextView
+        	android:id="@+id/nameTextView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#060606"
+            android:textSize="17dp" 
+            android:singleLine="true"/>
+	</LinearLayout>
+
+</LinearLayout>

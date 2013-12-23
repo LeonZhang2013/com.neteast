@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_focused="true"
+          android:drawable="@drawable/ic_nav_homepage_normal"/>
+
+    <item android:state_activated="true"
+          android:drawable="@drawable/ic_nav_homepage_selected"/>
+
+    <item android:drawable="@drawable/ic_nav_homepage_normal"/>
+</selector>

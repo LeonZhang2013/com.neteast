@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_help"
+        android:enabled="false"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="在线帮助"/>
+    <item
+        android:id="@+id/menu_feedback"
+        android:enabled="false"
+        android:icon="@drawable/ic_menu_compose"
+        android:title="在线反馈"/>
+    <item
+        android:id="@+id/menu_about"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="关于"/>
+    <item
+        android:id="@+id/menu_upgrade"
+        android:icon="@drawable/ic_menu_refresh"
+        android:title="更新版本"/>
+
+</menu>

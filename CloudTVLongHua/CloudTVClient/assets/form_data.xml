@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<InspectionInfo>
+    <Line>
+        <Cell>条形码：M0751676</Cell>
+        <Title>上海市东方医院检查报告单</Title>
+        <Cell>样本号：1005</Cell>
+    </Line>
+    <Line>
+        <Cell>姓名：陈炳虎</Cell>
+        <Cell>病人类型：住院</Cell>
+        <Cell>床号：81</Cell>
+        <Cell>标本种类：尿液</Cell>
+    </Line>
+    <Line>
+        <Cell>性别：男</Cell>
+        <Cell>门诊/住院号：A0186026</Cell>
+        <Cell>申请医生：周洁群</Cell>
+        <Cell>申请时间：2012年9月10日</Cell>
+    </Line>
+    <Line>
+        <Cell>年龄：15</Cell>
+        <Cell>科室：传染四病区</Cell>
+        <Cell>诊断：</Cell>
+        <Cell>备注：</Cell>
+    </Line>
+</InspectionInfo>

@@ -1,0 +1,177 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen" />
+
+    <style name="Nav">
+        <item name="android:textSize">@dimen/nav_tab_text_size</item>
+    </style>
+
+    <style name="Nav.TabList">
+        <item name="android:scrollbars">none</item>
+        <item name="android:divider">@android:color/transparent</item>
+    </style>
+
+    <style name="Nav.SubList">
+        <item name="android:scrollbars">none</item>
+        <item name="android:divider">@android:color/transparent</item>
+    </style>
+
+    <style name="Nav.Tab">
+        <item name="android:background">@drawable/nav_tab_background</item>
+    </style>
+
+    <style name="Nav.Tab_TabText">
+        <item name="android:textColor">@color/nav_tab_text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Nav.SubItem">
+        <item name="android:background">@drawable/nav_tab_background</item>
+    </style>
+
+    <style name="Nav.Sub_TabText">
+        <item name="android:textColor">@color/nav_sub_text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Home">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Home.MovieTitle">
+        <item name="android:textSize">@dimen/homepage_movie_title_size</item>
+    </style>
+
+    <style name="Home.MovieContent">
+        <item name="android:textSize">@dimen/homepage_movie_content_size</item>
+    </style>
+
+    <style name="Home.Indicator">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">29dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="Topic" />
+
+    <style name="Topic.SortButton">
+        <item name="android:background">@drawable/bg_radio</item>
+        <item name="android:button">@drawable/transparent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Detail">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Detail.MovieTitleText">
+        <item name="android:textSize">@dimen/detail_title_text_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Detail.MovieInfoText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/detail_info_text_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Detail.ButtonText">
+        <item name="android:textSize">@dimen/detail_button_text_size</item>
+        <item name="android:drawablePadding">@dimen/detail_button_drawable_padding</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="Detail.RecommendText">
+        <item name="android:layout_width">@dimen/detail_image_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:textSize">@dimen/detail_recommend_info_text_size</item>
+        <item name="android:layout_gravity">bottom|center_horizontal</item>
+    </style>
+
+    <style name="Detail.RecommendText.Count">
+        <item name="android:background">@color/image_mask_color</item>
+        <item name="android:layout_height">29dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Detail.Choice" />
+
+    <style name="Detail.Choice.Count">
+        <item name="android:textColor">@color/nav_sub_text</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/bg_item_can_focus</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_gravity">fill_horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Detail.Choice.Count.Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/nav_sub_text</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/bg_title_can_focus</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">14dp</item>
+    </style>
+
+    <style name="Detail.Choice.Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/nav_sub_text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/bg_title_can_focus</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">7dp</item>
+    </style>
+
+    <style name="Detail.Choice.Month">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/nav_sub_text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DialogActivity">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="BlueProgress" parent="android:Widget.ProgressBar.Large">
+        <item name="android:indeterminateDrawable">@drawable/progress_blue</item>
+    </style>
+
+    <style name="animStyle" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:indeterminateDrawable">@anim/loading_image</item>
+    </style>
+
+</resources>

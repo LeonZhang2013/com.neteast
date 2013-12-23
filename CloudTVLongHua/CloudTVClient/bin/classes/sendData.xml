@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<adver>
+		<item>
+		<image>cation_movie.png</image>
+		<title>动作片</title>
+		<contenturl>dongzp.xml</contenturl>
+	</item>
+	<item>
+		<image>044.png</image>
+		<title>爱情片</title>
+		<contenturl>lovep.xml</contenturl>
+	</item>
+	<item>
+		<image>055.png</image>
+		<title>动画片</title>
+		<contenturl>donghp.xml</contenturl>
+	</item>
+	<item>
+		<image>055.png</image>
+		<title>动画片</title>
+		<contenturl>donghp.xml</contenturl>
+	</item>
+	<item>
+		<image>055.png</image>
+		<title>动画片</title>
+		<contenturl>donghp.xml</contenturl>
+	</item>
+</adver>

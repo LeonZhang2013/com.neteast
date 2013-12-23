@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_focused="true"
+          android:color="@color/nav_sub_text_white" />
+
+    <item android:state_activated="true"
+          android:color="@color/nav_sub_text_blue"/>
+
+    <item android:color="@color/nav_sub_text_white" />
+</selector>

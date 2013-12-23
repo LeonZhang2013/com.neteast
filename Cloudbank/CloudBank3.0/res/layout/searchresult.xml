@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/searchresult"
+	android:orientation="vertical" >
+
+     <RelativeLayout
+        android:id="@+id/videocontent"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="12" 
+		android:orientation="horizontal">
+		<LinearLayout
+		    android:id="@+id/returnView"
+			android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginTop="30dp"
+		    android:layout_marginLeft="30dp">
+		    <Button 
+		        android:layout_width="wrap_content"
+		    	android:layout_marginLeft="10dp"
+		        android:background="@drawable/returnbutton"
+				android:layout_height="wrap_content"  
+				android:id="@+id/searchreturn">
+			</Button>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_marginTop="30dp"
+		    android:gravity="center">
+		   	<TextView
+                android:id="@+id/searchresultinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#482126" />
+		</LinearLayout>
+		<LinearLayout
+	    	android:layout_width="65dp"
+	        android:layout_height="59dp"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/pageinfobg"
+	        android:layout_marginRight="25dp"
+	        android:orientation="vertical" >
+	        <TextView
+	        	android:id="@+id/curentpage"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="left"
+	            android:gravity="center"
+	            android:text=""
+	            style="@style/pageinfostyle" />
+	        <TextView
+	        	android:id="@+id/totalpage"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="right"
+	            android:gravity="center"
+	            android:text=""
+	            style="@style/pageinfostyle" />
+	    </LinearLayout>
+		
+
+ 
+
+       	<android.support.v4.view.ViewPager
+            android:id="@+id/searchresultViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="150dp"
+            android:gravity="center"/>
+
+		<LinearLayout
+		    android:orientation="horizontal"        
+      		android:layout_width="match_parent" 
+      		android:layout_height="match_parent"
+   			android:layout_marginLeft="20dp"
+      		android:layout_marginRight="20dp" 
+      		android:layout_marginTop="65dp"
+      		android:layout_gravity="center"
+      		android:gravity="center">
+      		<ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center" 
+	            android:src="@drawable/cutline1"/>
+		</LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

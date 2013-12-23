@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:baselineAligned="true"
+	android:id="@+id/local"
+	android:orientation="horizontal" >
+		<!-- 左侧分类布局 -->
+		<RelativeLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1.05"
+			android:background="@drawable/recommendleftbg" >
+			<LinearLayout
+				android:id="@+id/categorylayout"
+				android:layout_width="match_parent"
+				android:layout_height="500dp"
+				android:layout_marginTop="10dp"
+				android:orientation="vertical" >
+				<!-- 视频 -->
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1"
+					android:gravity="bottom"
+					android:orientation="vertical" >
+					<ImageButton
+						android:id="@+id/videobutton"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_marginLeft="20dp"
+						android:background="@drawable/videoico" />
+					<ImageView
+						android:id="@+id/cateselectimage1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:background="@drawable/categoryselected" />
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentBottom="true"
+						android:background="@drawable/cutline" />
+				</RelativeLayout>
+				<!-- 音乐 -->
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1"
+					android:gravity="bottom"
+					android:orientation="vertical" >
+					<ImageButton
+						android:id="@+id/musicbutton"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_marginLeft="20dp"
+						android:background="@drawable/musicico" />
+					<ImageView
+						android:id="@+id/cateselectimage2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:background="@drawable/categoryselected"
+						android:visibility="invisible" />
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentBottom="true"
+						android:background="@drawable/cutline" />
+				</RelativeLayout>
+				<!-- 图片 -->
+				<RelativeLayout
+					android:id="@+id/picturelayout"
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1"
+					android:gravity="bottom" >
+					<ImageButton
+						android:id="@+id/picturepbutton"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_marginLeft="10dp"
+						android:background="@drawable/pictureico" />
+					<ImageView
+						android:id="@+id/cateselectimage3"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:background="@drawable/categoryselected"
+						android:visibility="invisible" />
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentBottom="true"
+						android:background="@drawable/cutline" />
+				</RelativeLayout>
+				<!-- 文件 -->
+				<RelativeLayout
+					android:id="@+id/applayout"
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1"
+					android:gravity="bottom" >
+					<ImageButton
+						android:id="@+id/filebutton"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_marginLeft="20dp"
+						android:background="@drawable/fileico" />
+					<ImageView
+						android:id="@+id/cateselectimage4"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:background="@drawable/categoryselected"
+						android:visibility="invisible" />
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentBottom="true"
+						android:background="@drawable/cutline" />
+				</RelativeLayout>
+				
+			</LinearLayout>
+			<!-- 设置按钮 -->
+			<ImageButton
+				android:id="@+id/settingbutton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentBottom="true"
+				android:src="@drawable/settingico"
+				android:layout_marginBottom="10dp" 
+				android:background="#00000000"/>
+		</RelativeLayout>
+		<!-- 右侧数据展示布局 -->
+		<RelativeLayout
+			android:id="@+id/datacontainer"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="9"
+			android:background="@drawable/contentbg" >
+		</RelativeLayout>
+</LinearLayout>

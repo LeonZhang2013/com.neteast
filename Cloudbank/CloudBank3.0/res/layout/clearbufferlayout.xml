@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/passwordbg"
+	android:orientation="vertical" >
+	<TextView
+		style="@style/upgradetextstyle"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:layout_marginTop="15dp"
+		android:gravity="center_vertical|center_horizontal"
+		android:text="清除缓存" >
+	</TextView>
+	<RadioGroup
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="100dp"
+		android:layout_marginRight="100dp"
+		android:orientation="vertical" >
+		<RadioButton
+		    android:id="@+id/rbacount"
+			style="@style/settingotherstyle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:button="@null"
+			android:drawableRight="@android:drawable/btn_radio"
+			android:text="帐号密码" />
+		<RadioButton
+		    android:id="@+id/rbimg"
+			style="@style/settingotherstyle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="40dp"
+			android:button="@null"
+			android:drawableRight="@android:drawable/btn_radio"
+			android:text="图片缓存" 
+			android:checked="true"/>
+		<RadioButton
+		    android:id="@+id/rbfile"
+			style="@style/settingotherstyle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="40dp"
+			android:button="@null"
+			android:drawableRight="@android:drawable/btn_radio"
+			android:text="临时文件" />
+	</RadioGroup>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+		<ImageButton
+		    android:id="@+id/clearbufferOkbtn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="100dp"
+			android:background="@drawable/okbt" />
+		<ImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="50dp"
+			android:background="@drawable/cancelbt"
+			android:onClick="cancelOnclick" />
+	</LinearLayout>
+</LinearLayout>

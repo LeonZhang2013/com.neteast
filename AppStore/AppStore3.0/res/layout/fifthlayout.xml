@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/fourthdatabg">
+	<!-- 分类 -->
+	<TextView
+		android:id="@+id/pageNum"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"
+		android:paddingTop="10dp"
+		android:paddingRight="20dp"
+		style="@style/pageNum"
+		android:text="" />
+
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/FifthViewpager"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentTop="true" >
+
+    </android.support.v4.view.ViewPager>
+
+	<LinearLayout
+	    android:id="@+id/tablayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="60dp"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="100dp"
+	    android:paddingRight="90dp" >
+	</LinearLayout>
+	
+	<ImageButton
+		android:id="@+id/leftpagebutton"
+		android:layout_width="30dp"
+		android:layout_height="70dp"
+		android:background="@drawable/leftbutton2"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true" />
+	<ImageButton
+		android:id="@+id/rightpagebutton"
+		android:layout_width="30dp"
+		android:layout_height="70dp"
+		android:background="@drawable/rightbutton1"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true" />
+</RelativeLayout>

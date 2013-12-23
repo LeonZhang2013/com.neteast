@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="PosterTitle" type="id">0x7100001</item>
+    <item name="PosterCountInfo" type="id">0x7100002</item>
+    <item name="PosterImage" type="id">0x7100003</item>
+
+    <item name="PageSelectorNext" type="id">0x7100004</item>
+    <item name="PageSelectorPrevious" type="id">0x7100005</item>
+    <item name="PageSelectorInfo" type="id">0x7100006</item>
+
+    <item name="ChannelList" type="id">0x7100007</item>
+
+    <item name="HomePage1" type="id">0x7100008</item>
+    <item name="HomePage2" type="id">0x7100009</item>
+    <item name="HomePage3" type="id">0x7100010</item>
+    <item name="HomePage4" type="id">0x7100011</item>
+    <item name="HomePage5" type="id">0x7100012</item>
+    <item name="HomePage6" type="id">0x7100013</item>
+    <item name="HomePage7" type="id">0x7100014</item>
+    <item name="HomePage8" type="id">0x7100015</item>
+    <item name="HomePage9" type="id">0x7100016</item>
+
+    <item name="VideoListItem1" type="id">0x7100017</item>
+
+</resources>

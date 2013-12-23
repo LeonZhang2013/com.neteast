@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 上传文件每个文件项的布局 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_item_upload"
+    android:orientation="vertical" >
+
+    <CheckBox 
+        android:id="@+id/uploadItemCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:focusable="false"
+        android:background="@drawable/bg_upload_select"
+        android:button="@drawable/ico_btn_upload_select"/>
+    <ImageView
+        android:id="@+id/uploadItemImage"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+       	android:layout_gravity="center" 
+        android:adjustViewBounds="true"
+        />
+
+    <TextView
+        android:id="@+id/uploadItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_item_upload_title"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="16sp" 
+        android:singleLine="true"/>
+
+</FrameLayout>

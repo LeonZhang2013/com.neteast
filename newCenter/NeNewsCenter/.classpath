@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="lib" path="assets/commons-codec-1.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="assets/commons-logging-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="assets/dom4j-1.6.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="assets/httpclient-4.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="assets/httpcore-4.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="assets/httpmime-4.2.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

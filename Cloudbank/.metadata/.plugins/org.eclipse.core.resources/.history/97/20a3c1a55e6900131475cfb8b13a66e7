@@ -1,0 +1,67 @@
+package com.example.testlive;
+
+import java.util.Observable;
+import java.util.Observer;
+
+import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.SystemClock;
+import android.view.Menu;
+
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		setTimer();
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+	
+	private AlarmManager alarmMgr;
+	private PendingIntent alarmIntent;
+	
+	private void marning(){
+		alarmMgr=(AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
+		alarmMgr.setInexactRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
+		        AlarmManager.INTERVAL_HALF_HOUR,
+		        AlarmManager.INTERVAL_HALF_HOUR, alarmIntent);
+		
+	
+		alarmMgr = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
+		Intent intent = new Intent(this, AlarmReceiver.class);
+		alarmIntent = PendingIntent.getBroadcast(this, 0, intent, 0);
+
+		alarmMgr.set(AlarmManager.ELAPSED_REALTIME_WAKEUP,
+		        SystemClock.elapsedRealtime() +
+		        1 * 1000, alarmIntent);
+	}
+	
+	
+    @Override
+	protected void onPause() {
+    	marning();
+		super.onPause();
+	}
+
+	private void setTimer() {
+        AlarmManager alarmMgr=(AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
+        Intent intent=new Intent(this,MainActivity.class);
+        intent.putExtra("action", "my.aaa.aaa");
+        PendingIntent pendIntent = PendingIntent.getBroadcast(this,0, intent, PendingIntent.FLAG_UPDATE_CURRENT);  
+        long triggerAtTime =  System.currentTimeMillis()+2 * 1000;  
+        alarmMgr.setRepeating(AlarmManager.RTC_WAKEUP, triggerAtTime,4 * 1000, pendIntent);
+    }
+
+
+}
