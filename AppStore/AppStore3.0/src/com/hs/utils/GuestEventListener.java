@@ -1,6 +1,6 @@
 package com.hs.utils;
 
-import com.hs.activity.PopWindowActivity;
+import com.hs.activity.AppDetailActivity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -52,7 +52,7 @@ public class GuestEventListener implements OnGestureListener {
 
 	@Override
 	public boolean onSingleTapUp(MotionEvent e) {
-		Intent intent = new Intent(context,PopWindowActivity.class);
+		Intent intent = new Intent(context,AppDetailActivity.class);
 		intent.putExtra("id", id);
 		context.startActivity(intent);
 		return true;

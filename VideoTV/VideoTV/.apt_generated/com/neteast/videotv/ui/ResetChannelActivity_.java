@@ -40,17 +40,17 @@ public final class ResetChannelActivity_
         mChannel2 = ((TextView) findViewById(id.channel2));
         mChannel1 = ((TextView) findViewById(id.channel1));
         mChannelScroll = ((ScrollView) findViewById(id.channelScroll));
-        mChannelGrid = ((GridLayout) findViewById(id.channelGrid));
         mBtnOk = ((Button) findViewById(id.btnOk));
+        mChannelGrid = ((GridLayout) findViewById(id.channelGrid));
         {
-            View view = findViewById(id.btnDefault);
+            View view = findViewById(id.btnOk);
             if (view!= null) {
                 view.setOnClickListener(new OnClickListener() {
 
 
                     @Override
                     public void onClick(View view) {
-                        ResetChannelActivity_.this.setChannelIndexToDefault();
+                        ResetChannelActivity_.this.swapChannel();
                     }
 
                 }
@@ -73,14 +73,14 @@ public final class ResetChannelActivity_
             }
         }
         {
-            View view = findViewById(id.btnOk);
+            View view = findViewById(id.btnDefault);
             if (view!= null) {
                 view.setOnClickListener(new OnClickListener() {
 
 
                     @Override
                     public void onClick(View view) {
-                        ResetChannelActivity_.this.swapChannel();
+                        ResetChannelActivity_.this.setChannelIndexToDefault();
                     }
 
                 }

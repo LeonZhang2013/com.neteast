@@ -39,7 +39,7 @@
 		<activity android:name=".FourthAndFifthActivity" />
 		<activity android:name=".SixthActivity" />
 		<activity android:name=".SixthFragmentActivity" />
-		<activity android:name=".PopWindowActivity" > <!-- android:theme="@style/myDialogTheme" -->
+		<activity android:name=".AppDetailActivity" > <!-- android:theme="@style/myDialogTheme" -->
 		</activity>
 		<receiver
 			android:name="com.hs.receiver.InstallReceiver"

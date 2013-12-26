@@ -310,8 +310,7 @@ public class VideoDetailActivity extends Activity implements ChoiceOriginDialog.
 					url = url.substring(0, 7)+"pad."+url.substring(7, url.length());
 	            	FlvCdDialog.newLocalParse(url, media.getTagName()).setVideoDetail(mVideoDetail).show(getFragmentManager(), "flvcd");
 				}
-            }*/else if(media.getTagName().equals("1080")){
-            	 MyLog.writeLog("1111111");
+            }*/else if("1080".equals(media.getTagName())||"4k".equals(media.getTagName())){
                 playMp4(media.getUrl());
             }else {
                 String api=TVApplication.API_FLVCD+media.getMediaId();

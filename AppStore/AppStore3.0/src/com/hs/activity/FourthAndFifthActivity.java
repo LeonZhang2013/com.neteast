@@ -299,7 +299,7 @@ public class FourthAndFifthActivity extends FragmentActivity implements PageList
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View v, int index, long arg3) {
 				Intent intent = new Intent();
-				intent.setClass(FourthAndFifthActivity.this, PopWindowActivity.class);
+				intent.setClass(FourthAndFifthActivity.this, AppDetailActivity.class);
 				intent.putExtra("id", String.valueOf(v.getId()));
 				startActivity(intent);
 			}

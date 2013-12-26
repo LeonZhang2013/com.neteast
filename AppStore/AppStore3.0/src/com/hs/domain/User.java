@@ -2,7 +2,7 @@ package com.hs.domain;
 
 import java.util.Map;
 
-import com.hs.activity.PopWindowActivity;
+import com.hs.activity.AppDetailActivity;
 import com.hs.handler.LoginHandler;
 
 import android.content.Context;

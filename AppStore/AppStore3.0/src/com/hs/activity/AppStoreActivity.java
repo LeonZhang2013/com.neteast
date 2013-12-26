@@ -192,7 +192,7 @@ public class AppStoreActivity extends TabActivity {
 			@Override
 			public void onClick(int imageIndex) {
 				Intent intent = new Intent();
-				intent.setClass(AppStoreActivity.this, PopWindowActivity.class);
+				intent.setClass(AppStoreActivity.this, AppDetailActivity.class);
 				intent.putExtra("id", (String) result.get(imageIndex).get("id"));
 				startActivity(intent);
 			}
@@ -742,7 +742,7 @@ public class AppStoreActivity extends TabActivity {
 		@Override
 		public boolean onSingleTapUp(MotionEvent e) {
 			Intent intent = new Intent();
-			intent.setClass(AppStoreActivity.this, PopWindowActivity.class);
+			intent.setClass(AppStoreActivity.this, AppDetailActivity.class);
 			intent.putExtra("id", (String) (clickedView.getTag()));
 			startActivity(intent);
 			return true;

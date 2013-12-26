@@ -30,8 +30,8 @@ public final class FilterDialog_
     }
 
     private void afterSetContentView_() {
-        mFilterGrids = ((GridLayout) findViewById(com.neteast.videotv.R.id.filterGrids));
         mFilterOk = ((Button) findViewById(com.neteast.videotv.R.id.filterOk));
+        mFilterGrids = ((GridLayout) findViewById(com.neteast.videotv.R.id.filterGrids));
         {
             View view = findViewById(com.neteast.videotv.R.id.filterOk);
             if (view!= null) {

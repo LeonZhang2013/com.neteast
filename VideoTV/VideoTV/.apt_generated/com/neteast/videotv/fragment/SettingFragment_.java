@@ -29,9 +29,9 @@ public final class SettingFragment_
     }
 
     private void afterSetContentView_() {
-        mShareSinaBtn = ((Button) findViewById(com.neteast.videotv.R.id.shareSinaBtn));
         mShareSinaTitle = ((TextView) findViewById(com.neteast.videotv.R.id.shareSinaTitle));
         mVersionInfo = ((TextView) findViewById(com.neteast.videotv.R.id.versionInfo));
+        mShareSinaBtn = ((Button) findViewById(com.neteast.videotv.R.id.shareSinaBtn));
     }
 
     @Override

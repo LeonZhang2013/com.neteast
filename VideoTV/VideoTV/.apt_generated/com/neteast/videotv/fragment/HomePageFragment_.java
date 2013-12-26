@@ -30,30 +30,30 @@ public final class HomePageFragment_
     }
 
     private void afterSetContentView_() {
-        image2_5 = ((FocusText) findViewById(com.neteast.videotv.R.id.homepage_2_5));
-        image3_2 = ((FocusText) findViewById(com.neteast.videotv.R.id.homepage_3_2));
-        image2_2 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_2_2));
-        image1_2 = ((FocusText) findViewById(com.neteast.videotv.R.id.homepage_1_2));
         image3_1 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_3_1));
-        image3_4 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_3_4));
-        image3_6 = ((FocusText) findViewById(com.neteast.videotv.R.id.homepage_3_6));
+        image1_4 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_1_4));
+        image1_6 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_1_6));
         mScroll = ((HorizontalScrollView) findViewById(com.neteast.videotv.R.id.scroll));
+        image2_1 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_2_1));
+        image3_7 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_3_7));
         image3_9 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_3_9));
         image2_4 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_2_4));
-        image3_10 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_3_10));
-        image3_7 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_3_7));
-        image1_7 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_1_7));
-        image1_5 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_1_5));
-        image1_4 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_1_4));
-        image1_1 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_1_1));
+        image2_2 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_2_2));
         image3_3 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_3_3));
-        image3_5 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_3_5));
+        image1_3 = ((FocusText) findViewById(com.neteast.videotv.R.id.homepage_1_3));
+        image1_2 = ((FocusText) findViewById(com.neteast.videotv.R.id.homepage_1_2));
+        image1_5 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_1_5));
+        image3_10 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_3_10));
+        image3_4 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_3_4));
         image2_6 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_2_6));
         image3_8 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_3_8));
-        image1_3 = ((FocusText) findViewById(com.neteast.videotv.R.id.homepage_1_3));
-        image2_1 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_2_1));
-        image1_6 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_1_6));
         image2_3 = ((FocusText) findViewById(com.neteast.videotv.R.id.homepage_2_3));
+        image3_2 = ((FocusText) findViewById(com.neteast.videotv.R.id.homepage_3_2));
+        image2_5 = ((FocusText) findViewById(com.neteast.videotv.R.id.homepage_2_5));
+        image1_7 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_1_7));
+        image3_6 = ((FocusText) findViewById(com.neteast.videotv.R.id.homepage_3_6));
+        image1_1 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_1_1));
+        image3_5 = ((PosterView) findViewById(com.neteast.videotv.R.id.homepage_3_5));
         initAnimation();
     }
 

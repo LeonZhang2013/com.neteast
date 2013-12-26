@@ -36,23 +36,23 @@ public final class VideoDetailActivity_
 
     private void afterSetContentView_() {
         mShare = ((Button) findViewById(id.detail_share));
-        mDescription = ((TextView) findViewById(id.detail_description));
-        mChoiceOrigin = ((Button) findViewById(id.detail_choice_origin));
-        mMovieImage = ((NetworkImageView) findViewById(id.detail_movie_image));
-        mChoiceSeries = ((Button) findViewById(id.detail_choice_series));
         mBaseInfo2 = ((TextView) findViewById(id.detail_movie_info2));
+        mChoiceOrigin = ((Button) findViewById(id.detail_choice_origin));
         mBaseInfo3 = ((TextView) findViewById(id.detail_movie_info3));
-        mMoreDescription = ((Button) findViewById(id.detail_more_description));
-        mCollection = ((Button) findViewById(id.detail_collection));
-        mBaseInfo5 = ((TextView) findViewById(id.detail_movie_info5));
+        mBaseInfo4 = ((TextView) findViewById(id.detail_movie_info4));
         mPlay = ((Button) findViewById(id.detail_play));
+        mDescription = ((TextView) findViewById(id.detail_description));
         mRecommendTitle = ((TextView) findViewById(id.detail_recommend_title));
         mMark = ((TextView) findViewById(id.detail_mark));
-        mBaseInfo1 = ((TextView) findViewById(id.detail_movie_info1));
-        mTitle = ((TextView) findViewById(id.detail_movie_title));
-        mBaseInfo4 = ((TextView) findViewById(id.detail_movie_info4));
-        mRecommendContainer = ((LinearLayout) findViewById(id.detail_recommend_container));
+        mChoiceSeries = ((Button) findViewById(id.detail_choice_series));
+        mBaseInfo5 = ((TextView) findViewById(id.detail_movie_info5));
         mBaseInfo6 = ((TextView) findViewById(id.detail_movie_info6));
+        mRecommendContainer = ((LinearLayout) findViewById(id.detail_recommend_container));
+        mMovieImage = ((NetworkImageView) findViewById(id.detail_movie_image));
+        mBaseInfo1 = ((TextView) findViewById(id.detail_movie_info1));
+        mCollection = ((Button) findViewById(id.detail_collection));
+        mTitle = ((TextView) findViewById(id.detail_movie_title));
+        mMoreDescription = ((Button) findViewById(id.detail_more_description));
         {
             View view = findViewById(id.detail_more_description);
             if (view!= null) {
@@ -84,6 +84,21 @@ public final class VideoDetailActivity_
             }
         }
         {
+            View view = findViewById(id.detail_choice_series);
+            if (view!= null) {
+                view.setOnClickListener(new OnClickListener() {
+
+
+                    @Override
+                    public void onClick(View view) {
+                        VideoDetailActivity_.this.choiceSeries();
+                    }
+
+                }
+                );
+            }
+        }
+        {
             View view = findViewById(id.detail_play);
             if (view!= null) {
                 view.setOnClickListener(new OnClickListener() {
@@ -107,21 +122,6 @@ public final class VideoDetailActivity_
                     @Override
                     public void onClick(View view) {
                         VideoDetailActivity_.this.collect();
-                    }
-
-                }
-                );
-            }
-        }
-        {
-            View view = findViewById(id.detail_choice_series);
-            if (view!= null) {
-                view.setOnClickListener(new OnClickListener() {
-
-
-                    @Override
-                    public void onClick(View view) {
-                        VideoDetailActivity_.this.choiceSeries();
                     }
 
                 }

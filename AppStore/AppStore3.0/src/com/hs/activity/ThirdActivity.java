@@ -97,10 +97,10 @@ public class ThirdActivity extends Activity {
 			TextView size = (TextView) elementlayout.findViewById(R.id.app_size);
 			
 			name.setText((String) map.get("title"));
-			
-			if (map.get("rating") != null) {
-				grade.setRating(Float.parseFloat((String) map
-						.get("rating")));
+			Object rating = map.get("rating");
+			if (rating != null) {
+				String satstr = String.valueOf(rating);
+				try{ grade.setRating(Float.parseFloat(satstr));}catch(Exception e){};
 			} 
 			ver.setText("版本："+(String) map.get("version"));
 			size.setText("大小："+(String) map.get("size"));
@@ -179,7 +179,7 @@ public class ThirdActivity extends Activity {
 			} catch (Exception e2) {
 			}
 			Intent intent = new Intent();
-			intent.setClass(ThirdActivity.this, PopWindowActivity.class);
+			intent.setClass(ThirdActivity.this, AppDetailActivity.class);
 			intent.putExtra("id", (String) ((Map<String,Object>) clickView.getTag()).get("id"));
 			startActivityForResult(intent, 0);
 			return true;

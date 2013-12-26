@@ -85,7 +85,7 @@ public class FirstActivity extends Activity implements OnGestureListener{
 		id = i.getStringExtra("id");
 		if(id!=null){
 			Intent intent = new Intent();
-			intent.setClass(FirstActivity.this, PopWindowActivity.class);
+			intent.setClass(FirstActivity.this, AppDetailActivity.class);
 			intent.putExtra("id", id);
 			startActivity(intent);
 		}
@@ -297,7 +297,7 @@ public class FirstActivity extends Activity implements OnGestureListener{
 		@Override
 		public boolean onSingleTapUp(MotionEvent e) {
 			Intent intent = new Intent();
-			intent.setClass(FirstActivity.this, PopWindowActivity.class);
+			intent.setClass(FirstActivity.this, AppDetailActivity.class);
 			intent.putExtra("id", (String)(clickedView.getTag()));
 			startActivity(intent);
 			return true;

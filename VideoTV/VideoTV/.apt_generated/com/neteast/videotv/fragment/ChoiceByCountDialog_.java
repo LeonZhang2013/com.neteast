@@ -31,8 +31,8 @@ public final class ChoiceByCountDialog_
 
     private void afterSetContentView_() {
         mCountGrid = ((GridLayout) findViewById(com.neteast.videotv.R.id.choice_count_grid));
-        mTitleScroll = ((HorizontalScrollView) findViewById(com.neteast.videotv.R.id.choice_title_scroll));
         mTitleContainer = ((LinearLayout) findViewById(com.neteast.videotv.R.id.choice_title_container));
+        mTitleScroll = ((HorizontalScrollView) findViewById(com.neteast.videotv.R.id.choice_title_scroll));
         updateUI();
     }
 

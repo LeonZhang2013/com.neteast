@@ -41,6 +41,7 @@ public class FocusText extends FrameLayout {
         ICON_TEXT.put("疯狂美剧", R.drawable.ic_feng_kuang_mei_ju);
         ICON_TEXT.put("日韩剧场", R.drawable.ic_ri_han_ju_chang);
         ICON_TEXT.put("喜剧电影", R.drawable.ic_xi_ju_dian_ying);
+        ICON_TEXT.put("4K专区", R.drawable.ic_hai_wai_da_4k);
     }
 
     private Drawable mFocusDrawable;
@@ -86,6 +87,7 @@ public class FocusText extends FrameLayout {
 
         text = text.replaceAll("#","");
         int icon = getIconByText(text);
+        System.out.println("=========================================-+" + text+" === "+icon);
 
         TextView textView = new TextView(getContext());
         textView.setTextSize(getResources().getDimension(R.dimen.home_page_pic_text_size));

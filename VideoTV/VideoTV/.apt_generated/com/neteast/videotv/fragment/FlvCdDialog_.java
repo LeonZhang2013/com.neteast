@@ -28,9 +28,9 @@ public final class FlvCdDialog_
     }
 
     private void afterSetContentView_() {
+        mLoading = ((View) findViewById(com.neteast.videotv.R.id.loading));
         mFailure = ((View) findViewById(com.neteast.videotv.R.id.failure));
         mInfoView = ((TextView) findViewById(com.neteast.videotv.R.id.info));
-        mLoading = ((View) findViewById(com.neteast.videotv.R.id.loading));
     }
 
     @Override

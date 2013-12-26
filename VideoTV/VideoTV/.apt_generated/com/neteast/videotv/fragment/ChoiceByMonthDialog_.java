@@ -28,9 +28,9 @@ public final class ChoiceByMonthDialog_
     }
 
     private void afterSetContentView_() {
-        mLeftPanel = ((LinearLayout) findViewById(com.neteast.videotv.R.id.month_left_panel));
         mRightPanel = ((LinearLayout) findViewById(com.neteast.videotv.R.id.month_right_panel));
         mMonthContainer = ((LinearLayout) findViewById(com.neteast.videotv.R.id.month_container));
+        mLeftPanel = ((LinearLayout) findViewById(com.neteast.videotv.R.id.month_left_panel));
         ininUI();
     }
 

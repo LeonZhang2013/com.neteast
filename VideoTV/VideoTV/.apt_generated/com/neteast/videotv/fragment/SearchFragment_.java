@@ -31,26 +31,11 @@ public final class SearchFragment_
     }
 
     private void afterSetContentView_() {
-        mPanel2 = ((LinearLayout) findViewById(com.neteast.videotv.R.id.panel2));
-        mPanel1 = ((LinearLayout) findViewById(com.neteast.videotv.R.id.panel1));
         mInput = ((EditText) findViewById(com.neteast.videotv.R.id.search_input));
-        mSearchByActor = ((Button) findViewById(com.neteast.videotv.R.id.search_by_actor));
+        mPanel1 = ((LinearLayout) findViewById(com.neteast.videotv.R.id.panel1));
         mPanel3 = ((LinearLayout) findViewById(com.neteast.videotv.R.id.panel3));
-        {
-            View view = findViewById(com.neteast.videotv.R.id.search_by_name);
-            if (view!= null) {
-                view.setOnClickListener(new OnClickListener() {
-
-
-                    @Override
-                    public void onClick(View view) {
-                        SearchFragment_.this.searchByName();
-                    }
-
-                }
-                );
-            }
-        }
+        mSearchByActor = ((Button) findViewById(com.neteast.videotv.R.id.search_by_actor));
+        mPanel2 = ((LinearLayout) findViewById(com.neteast.videotv.R.id.panel2));
         {
             View view = findViewById(com.neteast.videotv.R.id.search_by_actor);
             if (view!= null) {
@@ -60,6 +45,21 @@ public final class SearchFragment_
                     @Override
                     public void onClick(View view) {
                         SearchFragment_.this.searchByActor();
+                    }
+
+                }
+                );
+            }
+        }
+        {
+            View view = findViewById(com.neteast.videotv.R.id.search_by_name);
+            if (view!= null) {
+                view.setOnClickListener(new OnClickListener() {
+
+
+                    @Override
+                    public void onClick(View view) {
+                        SearchFragment_.this.searchByName();
                     }
 
                 }

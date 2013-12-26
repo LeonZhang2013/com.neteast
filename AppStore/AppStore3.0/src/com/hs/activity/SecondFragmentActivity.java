@@ -167,7 +167,7 @@ public class SecondFragmentActivity extends FragmentActivity implements PageList
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View v, int itemIndex, long arg3) {
 				Intent intent = new Intent();
-				intent.setClass(SecondFragmentActivity.this, PopWindowActivity.class);
+				intent.setClass(SecondFragmentActivity.this, AppDetailActivity.class);
 				intent.putExtra("id", String.valueOf(v.getId()));
 				startActivity(intent);
 			}
